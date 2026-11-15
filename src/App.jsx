@@ -1,9 +1,12 @@
-import { useState } from 'react'
-import { CalendarDays, Orbit, Satellite, UserRound } from 'lucide-react'
+import { useMemo, useState } from 'react'
+import { CalendarDays, Satellite, UserRound } from 'lucide-react'
 import data from './data/mockVitals.json'
+import environments from './data/environments.json'
 import AstroAvatar from './components/AstroAvatar'
 import MissionDashboard from './components/MissionDashboard'
+import EnvironmentToggle from './components/EnvironmentToggle'
 import { STATUS } from './constants/status'
+import { applyThresholds } from './lib/triage'
 
 function HeaderStat({ icon: Icon, label, value }) {
   return (
@@ -17,6 +20,9 @@ function HeaderStat({ icon: Icon, label, value }) {
 
 export default function App() {
   const [selectedRegion, setSelectedRegion] = useState(null)
+  const [envKey, setEnvKey] = useState('iss')
+  const env = environments[envKey]
+  const vitals = useMemo(() => applyThresholds(data.vitals, env), [env])
 
   return (
     <div className="min-h-screen bg-slate-950 bg-[radial-gradient(ellipse_at_top,_#0c1a33,_transparent_60%)] text-slate-100">
@@ -29,18 +35,20 @@ export default function App() {
               <p className="text-xs text-slate-500">Spaceflight health triage · NASA HRP data</p>
             </div>
           </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
             <HeaderStat icon={UserRound} label="Crew" value={data.astronautId} />
             <HeaderStat icon={CalendarDays} label="Mission day" value={data.missionDay} />
-            <HeaderStat icon={Orbit} label="Env" value={data.environment} />
           </div>
+        </div>
+        <div className="mx-auto mt-4 max-w-6xl">
+          <EnvironmentToggle environments={environments} value={envKey} onChange={setEnvKey} />
         </div>
       </header>
 
       <main className="mx-auto grid max-w-6xl gap-6 px-4 py-6 sm:px-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <section className="flex flex-col items-center rounded-2xl border border-slate-800 bg-slate-900/40 p-4">
-          <h2 className="mb-2 self-start text-xs uppercase tracking-widest text-slate-500">Body map</h2>
-          <AstroAvatar vitals={data.vitals} selectedRegion={selectedRegion} onSelectRegion={setSelectedRegion} />
+          <h2 className="mb-2 self-start text-xs uppercase tracking-widest text-slate-500">Body map · {env.label}</h2>
+          <AstroAvatar vitals={vitals} selectedRegion={selectedRegion} onSelectRegion={setSelectedRegion} />
           <ul className="mt-4 flex flex-wrap justify-center gap-4 text-xs text-slate-400">
             {Object.values(STATUS).map((s) => (
               <li key={s.label} className="flex items-center gap-1.5">
@@ -53,9 +61,13 @@ export default function App() {
         </section>
 
         <section className="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6">
-          <MissionDashboard vitals={data.vitals} selectedRegion={selectedRegion} onSelectRegion={setSelectedRegion} />
+          <MissionDashboard vitals={vitals} env={env} selectedRegion={selectedRegion} onSelectRegion={setSelectedRegion} />
         </section>
       </main>
+
+      <footer className="mx-auto max-w-6xl px-4 pb-6 text-xs text-slate-600 sm:px-8">
+        Thresholds are demo placeholders pending NASA-STD-3001 / HRP sourcing.
+      </footer>
     </div>
   )
 }

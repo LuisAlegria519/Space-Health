@@ -1,4 +1,4 @@
-import { Activity, ChevronRight, MousePointerClick } from 'lucide-react'
+import { Activity, ChevronRight, MousePointerClick, RadioTower } from 'lucide-react'
 import { getStatus, REGION_ICONS } from '../constants/status'
 
 function StatusBadge({ status }) {
@@ -11,8 +11,10 @@ function StatusBadge({ status }) {
   )
 }
 
-function MetricCard({ metric }) {
+function MetricCard({ metric, env }) {
   const s = getStatus(metric.status)
+  const t = metric.threshold
+  const op = t?.worse === 'higher' ? '≥' : '≤'
   return (
     <li className="rounded-xl border border-slate-800 bg-slate-900/70 p-4" style={{ borderLeft: `4px solid ${s.hex}` }}>
       <div className="flex items-start justify-between gap-3">
@@ -20,10 +22,21 @@ function MetricCard({ metric }) {
         <StatusBadge status={metric.status} />
       </div>
       <p className="mt-2 font-mono text-3xl font-semibold text-slate-50">
-        {metric.value}
+        {metric.display ?? metric.value}
         {metric.unit && <span className="ml-1.5 text-base font-normal text-slate-400">{metric.unit}</span>}
       </p>
       <p className="mt-2 text-sm text-slate-400">{metric.description}</p>
+      {t && (
+        <p className="mt-3 font-mono text-xs text-slate-500">
+          {env.label} limits: caution {op} {t.yellow} · critical {op} {t.red}
+        </p>
+      )}
+      {metric.status === 'red' && env.commDelayMin >= 5 && (
+        <p className="mt-3 flex items-start gap-2 rounded-lg bg-red-500/10 p-2 text-xs text-red-300 ring-1 ring-red-500/30">
+          <RadioTower className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+          ~{env.commDelayMin} min one-way delay to Earth. Crew-autonomous response required.
+        </p>
+      )}
     </li>
   )
 }
@@ -61,7 +74,7 @@ function Overview({ vitals, onSelectRegion }) {
   )
 }
 
-export default function MissionDashboard({ vitals, selectedRegion, onSelectRegion }) {
+export default function MissionDashboard({ vitals, env, selectedRegion, onSelectRegion }) {
   const region = selectedRegion ? vitals[selectedRegion] : null
 
   if (!region) return <Overview vitals={vitals} onSelectRegion={onSelectRegion} />
@@ -89,7 +102,7 @@ export default function MissionDashboard({ vitals, selectedRegion, onSelectRegio
       </div>
       <ul className="grid gap-4 sm:grid-cols-2">
         {region.metrics.map((m) => (
-          <MetricCard key={m.name} metric={m} />
+          <MetricCard key={m.id} metric={m} env={env} />
         ))}
       </ul>
     </div>

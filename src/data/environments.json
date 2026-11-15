@@ -1,0 +1,45 @@
+{
+  "_note": "DEMO PLACEHOLDER THRESHOLDS. Replace with values from NASA-STD-3001 / HRP evidence reports and add a source per entry before presenting. 'worse' = which direction is bad; a value at or past a limit triggers that level.",
+  "iss": {
+    "label": "ISS",
+    "description": "Low Earth orbit · microgravity",
+    "gravity": 0,
+    "commDelayMin": 0,
+    "thresholds": {
+      "icp": { "yellow": 15, "red": 20, "worse": "higher" },
+      "visualAcuity": { "yellow": 0.8, "red": 0.5, "worse": "lower" },
+      "restingHR": { "yellow": 90, "red": 110, "worse": "higher" },
+      "boneDensity": { "yellow": -1.0, "red": -2.5, "worse": "lower" },
+      "muscleMass": { "yellow": 65, "red": 60, "worse": "lower" },
+      "radiation": { "yellow": 80, "red": 120, "worse": "higher" }
+    }
+  },
+  "moon": {
+    "label": "Moon",
+    "description": "Lunar surface · 1/6 g",
+    "gravity": 0.166,
+    "commDelayMin": 0.04,
+    "thresholds": {
+      "icp": { "yellow": 17, "red": 22, "worse": "higher" },
+      "visualAcuity": { "yellow": 0.67, "red": 0.5, "worse": "lower" },
+      "restingHR": { "yellow": 95, "red": 115, "worse": "higher" },
+      "boneDensity": { "yellow": -1.0, "red": -2.5, "worse": "lower" },
+      "muscleMass": { "yellow": 65, "red": 60, "worse": "lower" },
+      "radiation": { "yellow": 70, "red": 100, "worse": "higher" }
+    }
+  },
+  "mars": {
+    "label": "Mars",
+    "description": "Martian surface · 3/8 g",
+    "gravity": 0.38,
+    "commDelayMin": 22,
+    "thresholds": {
+      "icp": { "yellow": 17, "red": 22, "worse": "higher" },
+      "visualAcuity": { "yellow": 0.67, "red": 0.5, "worse": "lower" },
+      "restingHR": { "yellow": 95, "red": 115, "worse": "higher" },
+      "boneDensity": { "yellow": -0.8, "red": -2.0, "worse": "lower" },
+      "muscleMass": { "yellow": 66, "red": 62, "worse": "lower" },
+      "radiation": { "yellow": 60, "red": 90, "worse": "higher" }
+    }
+  }
+}

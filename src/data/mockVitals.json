@@ -2,38 +2,39 @@
   "astronautId": "Astro-01",
   "missionDay": 142,
   "environment": "Microgravity (ISS)",
+  "dailyRoutines": [
+    { "id": "exercise", "title": "ARED Resistive Exercise", "target": 120, "current": 45, "unit": "min", "color": "#3b82f6" },
+    { "id": "hydration", "title": "Fluid Intake", "target": 2.5, "current": 1.2, "unit": "L", "color": "#0ea5e9" },
+    { "id": "mental", "title": "Cognitive Check-in", "target": 1, "current": 1, "unit": "session", "color": "#8b5cf6" }
+  ],
   "vitals": {
     "head": {
       "label": "Brain & Vision",
       "metrics": [
-        { "name": "Intracranial Pressure", "value": 15, "unit": "mmHg", "status": "yellow", "description": "Elevated due to cephalad fluid shift." },
-        { "name": "Visual Acuity", "value": "20/25", "unit": "", "status": "yellow", "description": "SANS monitoring required." }
-      ],
-      "overallStatus": "yellow"
+        { "id": "icp", "name": "Intracranial Pressure", "value": 15, "unit": "mmHg", "description": "Elevated due to cephalad fluid shift." },
+        { "id": "visualAcuity", "name": "Visual Acuity", "value": 0.8, "display": "20/25", "unit": "", "description": "SANS monitoring required." }
+      ]
     },
     "heart": {
       "label": "Cardiovascular",
       "metrics": [
-        { "name": "Resting Heart Rate", "value": 58, "unit": "bpm", "status": "green", "description": "Nominal for microgravity." },
-        { "name": "Blood Pressure", "value": "110/70", "unit": "mmHg", "status": "green", "description": "Nominal." }
-      ],
-      "overallStatus": "green"
+        { "id": "restingHR", "name": "Resting Heart Rate", "value": 58, "unit": "bpm", "description": "Nominal for microgravity." },
+        { "id": "bloodPressure", "name": "Blood Pressure", "value": "110/70", "unit": "mmHg", "status": "green", "description": "Nominal." }
+      ]
     },
     "musculoskeletal": {
       "label": "Musculoskeletal",
       "metrics": [
-        { "name": "Bone Density (T-Score)", "value": -1.2, "unit": "SD", "status": "yellow", "description": "Accelerated bone loss. Increase ARED resistive exercise." },
-        { "name": "Muscle Mass", "value": 68.5, "unit": "kg", "status": "green", "description": "Within acceptable parameters." }
-      ],
-      "overallStatus": "yellow"
+        { "id": "boneDensity", "name": "Bone Density (T-Score)", "value": -1.2, "unit": "SD", "description": "Accelerated bone loss. Increase ARED resistive exercise." },
+        { "id": "muscleMass", "name": "Muscle Mass", "value": 68.5, "unit": "kg", "description": "Within acceptable parameters." }
+      ]
     },
     "fullbody": {
       "label": "Radiation & Immune",
       "metrics": [
-        { "name": "Cumulative Radiation", "value": 120, "unit": "mSv", "status": "red", "description": "Approaching 6-month threshold." },
-        { "name": "Skin Irritation", "value": "Present", "unit": "", "status": "yellow", "description": "Latent viral reactivation risk." }
-      ],
-      "overallStatus": "red"
+        { "id": "radiation", "name": "Cumulative Radiation", "value": 120, "unit": "mSv", "description": "Approaching 6-month threshold." },
+        { "id": "skinIrritation", "name": "Skin Irritation", "value": "Present", "unit": "", "status": "yellow", "description": "Latent viral reactivation risk." }
+      ]
     }
   }
 }
