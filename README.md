@@ -1,6 +1,6 @@
 # Astro-Twin
 
-**A visual health-triage tool for astronauts, built for the NASA Space Apps Challenge.**
+**A visual health-triage tool for astronauts, built for the NASA Space Apps Challenge 2026.**
 
 Astro-Twin maps spaceflight health hazards onto an interactive human avatar. Each body region is colored by its status:
 🟢 Nominal, 🟡 Caution, 🔴 Critical. Click a region to see the readings behind its color. The app has three modes:
@@ -155,6 +155,16 @@ scripts/build-osdr.mjs        CSV → JSON converter
 ```
 
 **Built with:** React 18, Vite 6, Tailwind CSS 4, Lucide icons.
+
+## Team
+
+A solo submission to the **[NASA Space Apps Challenge 2026](https://www.spaceappschallenge.org/)**.
+
+| Member | Role |
+|---|---|
+| [@LuisAlegria519](https://github.com/LuisAlegria519) | Concept, design, development, data integration |
+
+NASA does not endorse this project. NASA data is used under NASA's open-data policy; see the [data sources](#data-sources) above.
 
 ## Roadmap
 - Habit rings for daily routines (exercise, fluid intake, cognitive check-in). The data is already in `mockVitals.json`.
