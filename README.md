@@ -91,7 +91,7 @@ One data-quality note: crew member C003's first test (L-92) has platelet and neu
 - **NASA Human Research Program (HRP)**: [Human Research Program](https://www.nasa.gov/hrp/) · [HRP Human Research Roadmap](https://humanresearchroadmap.nasa.gov/)
 - **NASA-STD-3001** (Spaceflight Human-System Standard): [Vol. 1, Crew Health](https://standards.nasa.gov/node/238) · [Vol. 2, Human Factors, Habitability & Environmental Health](https://standards.nasa.gov/node/237) · [NASA Human Spaceflight Standards overview](https://www.nasa.gov/offices/ochmo/human_spaceflight/standards101)
 - **Cognition in spaceflight**:
-  - [Penn Medicine: first study of a civilian space crew (Inspiration4)](https://pennmedicine.org/news/news-releases/2024/june/first-study-of-civilian-space-crew-charts-course-for-research-as-commercial-flight-heats-up)
+  - [Penn Medicine: first study of a civilian space crew (Inspiration4)](https://www.pennmedicine.org/news/first-study-of-civilian-space-crew-charts-course-for-research-as-commercial-flight-heats-up)
   - [Penn: Astronaut Behavioral Health](https://www.med.upenn.edu/uep/astronaut.html)
   - [Baylor College of Medicine / TRISH: Inspiration4 health data](https://www.bcm.edu/news/trish-shares-new-health-data-from-first-all-civilian-orbital-space-mission)
 
