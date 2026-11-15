@@ -1,0 +1,39 @@
+{
+  "astronautId": "Astro-01",
+  "missionDay": 142,
+  "environment": "Microgravity (ISS)",
+  "vitals": {
+    "head": {
+      "label": "Brain & Vision",
+      "metrics": [
+        { "name": "Intracranial Pressure", "value": 15, "unit": "mmHg", "status": "yellow", "description": "Elevated due to cephalad fluid shift." },
+        { "name": "Visual Acuity", "value": "20/25", "unit": "", "status": "yellow", "description": "SANS monitoring required." }
+      ],
+      "overallStatus": "yellow"
+    },
+    "heart": {
+      "label": "Cardiovascular",
+      "metrics": [
+        { "name": "Resting Heart Rate", "value": 58, "unit": "bpm", "status": "green", "description": "Nominal for microgravity." },
+        { "name": "Blood Pressure", "value": "110/70", "unit": "mmHg", "status": "green", "description": "Nominal." }
+      ],
+      "overallStatus": "green"
+    },
+    "musculoskeletal": {
+      "label": "Musculoskeletal",
+      "metrics": [
+        { "name": "Bone Density (T-Score)", "value": -1.2, "unit": "SD", "status": "yellow", "description": "Accelerated bone loss. Increase ARED resistive exercise." },
+        { "name": "Muscle Mass", "value": 68.5, "unit": "kg", "status": "green", "description": "Within acceptable parameters." }
+      ],
+      "overallStatus": "yellow"
+    },
+    "fullbody": {
+      "label": "Radiation & Immune",
+      "metrics": [
+        { "name": "Cumulative Radiation", "value": 120, "unit": "mSv", "status": "red", "description": "Approaching 6-month threshold." },
+        { "name": "Skin Irritation", "value": "Present", "unit": "", "status": "yellow", "description": "Latent viral reactivation risk." }
+      ],
+      "overallStatus": "red"
+    }
+  }
+}
