@@ -68,7 +68,7 @@ function Overview({ vitals, onSelectRegion }) {
   )
 }
 
-export default function MissionDashboard({ vitals, env, selectedRegion, onSelectRegion }) {
+export default function MissionDashboard({ vitals, env, selectedRegion, onSelectRegion, onOpenCognitive }) {
   const region = selectedRegion ? vitals[selectedRegion] : null
 
   if (!region) return <Overview vitals={vitals} onSelectRegion={onSelectRegion} />
@@ -103,6 +103,14 @@ export default function MissionDashboard({ vitals, env, selectedRegion, onSelect
       )}
       {region.emptyNote && (
         <p className="mt-4 rounded-xl border border-dashed border-slate-700 p-4 text-sm text-slate-400">{region.emptyNote}</p>
+      )}
+      {selectedRegion === 'head' && onOpenCognitive && (
+        <button
+          onClick={onOpenCognitive}
+          className="mt-4 rounded-lg bg-violet-500/20 px-4 py-2 text-sm font-medium text-violet-200 ring-1 ring-violet-500/40 hover:bg-violet-500/30"
+        >
+          Run a cognitive check-in →
+        </button>
       )}
     </div>
   )

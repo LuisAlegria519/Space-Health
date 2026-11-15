@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { CalendarDays, Database, FlaskConical, Satellite, UserRound } from 'lucide-react'
+import { useCallback, useMemo, useState } from 'react'
+import { Brain, CalendarDays, Database, FlaskConical, Satellite, UserRound } from 'lucide-react'
 import data from './data/mockVitals.json'
 import environments from './data/environments.json'
 import osdr from './data/osdrTimeline.json'
@@ -10,10 +10,13 @@ import SimulationControls from './components/SimulationControls'
 import { STATUS } from './constants/status'
 import { applyThresholds } from './lib/triage'
 import { buildOsdrVitals } from './lib/osdr'
+import { loadSessions, saveSessions, withCognition } from './lib/cognition'
+import CognitiveLab from './components/cognitive/CognitiveLab'
 
 const MODES = [
   { key: 'scenario', label: 'Scenario', icon: FlaskConical },
   { key: 'osdr', label: 'NASA Data · Inspiration4', icon: Database },
+  { key: 'cognitive', label: 'Cognitive Lab', icon: Brain },
 ]
 
 function HeaderStat({ icon: Icon, label, value }) {
@@ -30,7 +33,20 @@ function HeaderStat({ icon: Icon, label, value }) {
 const params = new URLSearchParams(window.location.search)
 
 export default function App() {
-  const [mode, setMode] = useState(params.get('mode') === 'osdr' ? 'osdr' : 'scenario')
+  const [mode, setMode] = useState(MODES.some((m) => m.key === params.get('mode')) ? params.get('mode') : 'scenario')
+  const [sessions, setSessions] = useState(loadSessions)
+
+  const recordSession = useCallback((testId, r) => {
+    setSessions((prev) => {
+      const next = { ...prev, [testId]: [...(prev[testId] ?? []), { value: r.value, detail: r.detail, at: new Date().toISOString() }] }
+      saveSessions(next)
+      return next
+    })
+  }, [])
+  const resetSessions = useCallback(() => {
+    saveSessions({})
+    setSessions({})
+  }, [])
   const [selectedRegion, setSelectedRegion] = useState(params.get('region'))
   const [envKey, setEnvKey] = useState('iss')
   const [crewId, setCrewId] = useState(osdr.crew[params.get('crew')] ? params.get('crew') : 'C001')
@@ -42,9 +58,10 @@ export default function App() {
   const timepoint = osdr.timepoints[tpIndex]
 
   const vitals = useMemo(
-    () => (isOsdr ? buildOsdrVitals(osdr, crewId, timepoint) : applyThresholds(data.vitals, env)),
-    [isOsdr, crewId, timepoint, env],
+    () => (isOsdr ? buildOsdrVitals(osdr, crewId, timepoint) : withCognition(applyThresholds(data.vitals, env), sessions)),
+    [isOsdr, crewId, timepoint, env, sessions],
   )
+  const isCognitive = mode === 'cognitive'
 
   return (
     <div className="min-h-screen bg-slate-950 bg-[radial-gradient(ellipse_at_top,_#0c1a33,_transparent_60%)] text-slate-100">
@@ -83,7 +100,7 @@ export default function App() {
               </button>
             ))}
           </div>
-          {!isOsdr && <EnvironmentToggle environments={environments} value={envKey} onChange={setEnvKey} />}
+          {mode === 'scenario' && <EnvironmentToggle environments={environments} value={envKey} onChange={setEnvKey} />}
         </div>
       </header>
 
@@ -100,7 +117,9 @@ export default function App() {
           />
         )}
 
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+        {isCognitive && <CognitiveLab sessions={sessions} onRecord={recordSession} onReset={resetSessions} />}
+
+        <div className={`grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] ${isCognitive ? 'hidden' : ''}`}>
           <section className="flex flex-col items-center rounded-2xl border border-slate-800 bg-slate-900/40 p-4">
             <h2 className="mb-2 self-start text-xs uppercase tracking-widest text-slate-500">
               Body map · {isOsdr ? `${crewId} @ ${timepoint}` : env.label}
@@ -129,13 +148,16 @@ export default function App() {
               env={isOsdr ? null : env}
               selectedRegion={selectedRegion}
               onSelectRegion={setSelectedRegion}
+              onOpenCognitive={isOsdr ? undefined : () => setMode('cognitive')}
             />
           </section>
         </div>
       </main>
 
       <footer className="mx-auto max-w-6xl px-4 pb-6 text-xs text-slate-600 sm:px-8">
-        {isOsdr ? (
+        {isCognitive ? (
+          'Cognitive Lab: original browser tasks modelled on standard paradigms (psychomotor vigilance, digit-symbol substitution, spatial working memory). Mission history is simulated; your sessions are stored only in this browser.'
+        ) : isOsdr ? (
           <>
             Data: {osdr.source.title}. {osdr.source.repository}, {osdr.source.studies.join('; ')}. {osdr.source.note} Status:
             green = within lab reference range, yellow = outside by ≤10%, red = further outside.
