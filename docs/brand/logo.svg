@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#16264A"/>
+      <stop offset="100%" stop-color="#070C17"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <g fill="#EAF0F7">
+    <circle cx="140" cy="150" r="3" opacity="0.8"/><circle cx="250" cy="90" r="2" opacity="0.6"/>
+    <circle cx="860" cy="130" r="3" opacity="0.8"/><circle cx="780" cy="230" r="2" opacity="0.5"/>
+    <circle cx="110" cy="420" r="2" opacity="0.6"/><circle cx="920" cy="400" r="2.5" opacity="0.7"/>
+    <circle cx="190" cy="640" r="2" opacity="0.5"/><circle cx="880" cy="620" r="3" opacity="0.7"/>
+    <circle cx="640" cy="80" r="2" opacity="0.6"/><circle cx="380" cy="160" r="1.8" opacity="0.5"/>
+  </g>
+
+  <!-- Radiation / immune field -->
+  <circle cx="512" cy="430" r="330" fill="url(#aura)"/>
+  <rect x="322" y="150" width="380" height="560" rx="70" fill="none" stroke="#EF4444" stroke-width="6" stroke-dasharray="20 18" opacity="0.85"/>
+
+  <!-- Orbit ring (back half) -->
+  <ellipse cx="512" cy="430" rx="400" ry="110" fill="none" stroke="url(#orbit)" stroke-width="8" transform="rotate(-18 512 430)" opacity="0.45"/>
+
+  <!-- Avatar -->
+  <g stroke="#0B1220" stroke-width="8">
+    <!-- limbs: musculoskeletal (caution) -->
+    <rect x="378" y="320" width="44" height="230" rx="22" fill="#EAB308" transform="rotate(10 400 320)"/>
+    <rect x="602" y="320" width="44" height="230" rx="22" fill="#EAB308" transform="rotate(-10 624 320)"/>
+    <rect x="440" y="500" width="58" height="190" rx="28" fill="#EAB308"/>
+    <rect x="526" y="500" width="58" height="190" rx="28" fill="#EAB308"/>
+    <!-- torso: cardiovascular (nominal) -->
+    <rect x="420" y="300" width="184" height="230" rx="34" fill="#22C55E"/>
+    <!-- head: brain & vision (caution) -->
+    <circle cx="512" cy="232" r="64" fill="#EAB308"/>
+  </g>
+  <!-- visor + heart -->
+  <rect x="470" y="212" width="84" height="32" rx="16" fill="#0B1220" opacity="0.4"/>
+  <path d="M512 452 c-30 -18 -54 -38 -54 -62 c0 -18 14 -30 30 -30 c11 0 20 6 24 14 c4 -8 13 -14 24 -14 c16 0 30 12 30 30 c0 24 -24 44 -54 62 z" fill="#0B1220" opacity="0.35"/>
+
+  <!-- Orbit ring (front arc) + satellite dot -->
+  <path d="M 140 520 A 400 110 -18 0 0 860 300" fill="none" stroke="url(#orbit)" stroke-width="8" transform="rotate(0)" opacity="0.95"/>
+  <circle cx="860" cy="300" r="16" fill="#38BDF8"/>
+  <circle cx="860" cy="300" r="30" fill="#38BDF8" opacity="0.2"/>
+
+  <!-- Wordmark -->
+  <text x="512" y="842" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="112" font-weight="700" letter-spacing="4" fill="#EAF0F7">ASTRO-TWIN</text>
+  <text x="512" y="906" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="10" fill="#38BDF8">SPACEFLIGHT HEALTH TRIAGE</text>
+</svg>

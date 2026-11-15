@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Astro-Twin: Space Apps 2026 Demo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;600&display=swap">
+<style>
+  @page { size: 1920px 1080px; margin: 0; }
+  :root {
+    --ink: #0B1220; --panel: #121B2E; --line: #26344F; --text: #EAF0F7; --muted: #A3B3CA;
+    --sky: #38BDF8; --green: #22C55E; --yellow: #EAB308; --red: #EF4444;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: var(--ink); }
+  body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: var(--text); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  section { width: 1920px; height: 1080px; padding: 112px 128px; display: flex; flex-direction: column; background: var(--ink); position: relative; overflow: hidden; break-after: page; }
+  section:last-child { break-after: auto; }
+  section.alt { background: var(--panel); }
+  h1, h2, h3, .num { font-family: 'Space Grotesk', 'Segoe UI', Arial, sans-serif; }
+  .eyebrow { font-size: 24px; font-weight: 600; letter-spacing: 4px; color: var(--sky); text-transform: uppercase; }
+  .title { font-size: 64px; font-weight: 600; line-height: 1.1; margin-top: 16px; }
+  .lede { font-size: 30px; line-height: 1.45; color: var(--muted); margin-top: 28px; }
+  .small { font-size: 24px; color: var(--muted); }
+  .split { display: flex; gap: 72px; align-items: center; flex: 1; }
+  .copy { width: 660px; flex: none; display: flex; flex-direction: column; }
+  .shot { width: 932px; height: 700px; object-fit: contain; border-radius: 24px; background: #0E1626; border: 2px solid var(--line); box-shadow: 0 24px 64px rgba(0,0,0,.45); }
+  ul.points { font-size: 28px; line-height: 1.4; color: var(--muted); margin-top: 32px; padding-left: 36px; }
+  ul.points li { margin-top: 18px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 64px; }
+  .card { background: var(--panel); border: 2px solid var(--line); border-radius: 24px; padding: 44px; }
+  .card .tag { font-size: 24px; font-weight: 600; color: var(--sky); letter-spacing: 3px; }
+  .card h3 { font-size: 36px; font-weight: 600; line-height: 1.15; margin-top: 16px; }
+  .card p.body { font-size: 27px; line-height: 1.45; color: var(--muted); margin-top: 16px; }
+  .pills { display: flex; gap: 16px; margin-top: 36px; }
+  .pill { font-size: 24px; font-weight: 600; padding: 10px 22px; border-radius: 999px; color: var(--ink); }
+  table { width: 100%; border-collapse: collapse; font-size: 27px; margin-top: 44px; }
+  th { text-align: left; color: var(--sky); font-weight: 600; font-size: 24px; letter-spacing: 2px; text-transform: uppercase; padding: 0 0 14px; border-bottom: 2px solid var(--line); }
+  td { padding: 16px 0; border-bottom: 2px solid var(--line); vertical-align: top; }
+  td + td, th + th { padding-left: 24px; }
+  .stats { display: flex; gap: 24px; margin-top: 40px; }
+  .stat { flex: 1; background: var(--panel); border: 2px solid var(--line); border-radius: 20px; padding: 24px 28px; }
+  .num { font-size: 64px; font-weight: 600; color: var(--sky); line-height: 1; }
+  .stat .label { font-size: 24px; color: var(--muted); margin-top: 8px; }
+  .footer { position: absolute; left: 128px; right: 128px; bottom: 56px; display: flex; justify-content: space-between; font-size: 24px; color: #6B7C96; }
+  .real { color: var(--sky); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- 1. Title + introduction -->
+<section>
+  <div class="split">
+    <div class="copy">
+      <p class="eyebrow">NASA Space Apps Challenge 2026</p>
+      <h1 style="font-size:120px; font-weight:700; line-height:1; margin-top:28px">Astro-Twin</h1>
+      <p class="lede" style="font-size:38px; color:var(--text)">A health-triage “digital twin” that shows astronauts what needs attention, at a glance.</p>
+      <p class="lede">An interactive body map colors each body system green, yellow or red from real and mission health data.</p>
+    </div>
+    <img class="shot" src="../screenshots/scenario-overview.png" alt="Astro-Twin: color-coded astronaut avatar beside a list of body systems">
+  </div>
+  <div class="footer"><span>github.com/LuisAlegria519/Space-Health</span><span>1 / 7</span></div>
+</section>
+
+<!-- 2. Problem -->
+<section class="alt">
+  <p class="eyebrow">The problem</p>
+  <h2 class="title">Spaceflight health data is hard to read at a glance</h2>
+  <div class="cards">
+    <div class="card"><p class="tag">01</p><h3>Many hazards at once</h3><p class="body">Microgravity, radiation, bone and muscle loss, vision changes, each tracked by different tests.</p></div>
+    <div class="card"><p class="tag">02</p><h3>Numbers, not answers</h3><p class="body">Lab panels and sensor logs need an expert to say what matters today.</p></div>
+    <div class="card"><p class="tag">03</p><h3>Earth gets further away</h3><p class="body">From Mars, a one-way signal can take up to about 22 minutes. Crews will have to triage on their own.</p></div>
+  </div>
+  <div class="footer"><span>Astro-Twin</span><span>2 / 7</span></div>
+</section>
+
+<!-- 3. Body map -->
+<section>
+  <div class="split">
+    <div class="copy">
+      <p class="eyebrow">How it works</p>
+      <h2 class="title">A body map that colors itself</h2>
+      <table>
+        <tr><th style="width:42%">Region</th><th>Shows</th></tr>
+        <tr><td>Head</td><td>Brain &amp; vision</td></tr>
+        <tr><td>Torso</td><td>Heart &amp; blood</td></tr>
+        <tr><td>Limbs</td><td>Bone &amp; muscle</td></tr>
+        <tr><td>Outer field</td><td>Radiation &amp; immune</td></tr>
+      </table>
+      <div class="pills">
+        <p class="pill" style="background:var(--green)">Nominal</p>
+        <p class="pill" style="background:var(--yellow)">Caution</p>
+        <p class="pill" style="background:var(--red)">Critical</p>
+      </div>
+      <p class="small" style="margin-top:28px">Each region takes its worst reading’s color. Click it for values, limits and what they mean.</p>
+    </div>
+    <img class="shot" src="../screenshots/scenario-overview.png" alt="Scenario mode body map and system list">
+  </div>
+  <div class="footer"><span>Astro-Twin</span><span>3 / 7</span></div>
+</section>
+
+<!-- 4. Environments -->
+<section class="alt">
+  <div class="split">
+    <div class="copy">
+      <p class="eyebrow">ISS · Moon · Mars</p>
+      <h2 class="title">Same astronaut, three worlds</h2>
+      <ul class="points">
+        <li>Each environment has its own limits, so the same reading can change color.</li>
+        <li>Partial gravity on the Moon and Mars eases fluid shift, so head limits relax.</li>
+        <li>On Mars, critical readings warn that Earth is ~22 minutes away: the crew acts alone.</li>
+      </ul>
+    </div>
+    <img class="shot" src="../screenshots/scenario-mars-radiation.png" alt="Mars mode: radiation critical with communication-delay warning">
+  </div>
+  <div class="footer"><span>Astro-Twin</span><span>4 / 7</span></div>
+</section>
+
+<!-- 5. Real NASA data -->
+<section>
+  <div class="split">
+    <div class="copy">
+      <p class="eyebrow">Real NASA data</p>
+      <h2 class="title">Inspiration4 crew bloodwork, played back</h2>
+      <p class="lede">From NASA’s Open Science Data Repository (OSD-569, OSD-575), graded against each lab’s own normal range.</p>
+      <div class="stats">
+        <div class="stat"><p class="num">4</p><p class="label">crew</p></div>
+        <div class="stat"><p class="num">7</p><p class="label">test dates</p></div>
+        <div class="stat"><p class="num">10</p><p class="label">lab markers</p></div>
+      </div>
+    </div>
+    <img class="shot" src="../screenshots/osdr-inspiration4.png" alt="NASA data mode: crew timeline playback with blood markers">
+  </div>
+  <div class="footer"><span>Astro-Twin</span><span>5 / 7</span></div>
+</section>
+
+<!-- 6. Cognitive Lab -->
+<section class="alt">
+  <div class="split">
+    <div class="copy">
+      <p class="eyebrow">Cognitive Lab</p>
+      <h2 class="title">Bloodwork can’t see the brain, so we added games that can</h2>
+      <table>
+        <tr><th style="width:48%">Game</th><th>Measures</th></tr>
+        <tr><td>Reaction Time</td><td>Alertness</td></tr>
+        <tr><td>Symbol Match</td><td>Processing speed</td></tr>
+        <tr><td>Memory Grid</td><td>Visual memory</td></tr>
+      </table>
+      <p class="small" style="margin-top:28px">Scores are compared with a pre-flight baseline and feed the avatar’s head.</p>
+    </div>
+    <img class="shot" src="../screenshots/cognitive-lab.png" alt="Cognitive Lab with game cards and mission trend charts">
+  </div>
+  <div class="footer"><span>Astro-Twin</span><span>6 / 7</span></div>
+</section>
+
+<!-- 7. Real vs simulated + next -->
+<section>
+  <p class="eyebrow">Transparency &amp; next steps</p>
+  <h2 class="title">What’s real, what’s simulated, what’s next</h2>
+  <div style="display:flex; gap:72px; margin-top:8px">
+    <table style="flex:1.3">
+      <tr><th style="width:56%">Part</th><th>Source</th></tr>
+      <tr><td>Inspiration4 labs &amp; normal ranges</td><td class="real">Real NASA data</td></tr>
+      <tr><td>Cognitive game scores</td><td class="real">Real, measured live</td></tr>
+      <tr><td>Scenario astronaut</td><td>Mock values</td></tr>
+      <tr><td>ISS / Moon / Mars limits</td><td>Placeholders</td></tr>
+      <tr><td>Cognitive mission history</td><td>Simulated</td></tr>
+    </table>
+    <div style="flex:1; margin-top:44px">
+      <p class="small" style="color:var(--sky); font-weight:600; letter-spacing:2px; text-transform:uppercase">Next</p>
+      <ul class="points" style="margin-top:8px">
+        <li>Real limits from NASA-STD-3001 and HRP</li>
+        <li>Onboard eye-scan &amp; ultrasound inputs</li>
+        <li>Daily habit rings for crew routines</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span style="color:var(--sky); font-weight:600">Open source: github.com/LuisAlegria519/Space-Health</span><span>7 / 7</span></div>
+</section>
+
+</body>
+</html>
