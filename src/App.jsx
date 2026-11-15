@@ -1,12 +1,20 @@
 import { useMemo, useState } from 'react'
-import { CalendarDays, Satellite, UserRound } from 'lucide-react'
+import { CalendarDays, Database, FlaskConical, Satellite, UserRound } from 'lucide-react'
 import data from './data/mockVitals.json'
 import environments from './data/environments.json'
+import osdr from './data/osdrTimeline.json'
 import AstroAvatar from './components/AstroAvatar'
 import MissionDashboard from './components/MissionDashboard'
 import EnvironmentToggle from './components/EnvironmentToggle'
+import SimulationControls from './components/SimulationControls'
 import { STATUS } from './constants/status'
 import { applyThresholds } from './lib/triage'
+import { buildOsdrVitals } from './lib/osdr'
+
+const MODES = [
+  { key: 'scenario', label: 'Scenario', icon: FlaskConical },
+  { key: 'osdr', label: 'NASA Data · Inspiration4', icon: Database },
+]
 
 function HeaderStat({ icon: Icon, label, value }) {
   return (
@@ -18,11 +26,25 @@ function HeaderStat({ icon: Icon, label, value }) {
   )
 }
 
+// Deep-link support, e.g. ?mode=osdr&crew=C002&tp=2&region=heart
+const params = new URLSearchParams(window.location.search)
+
 export default function App() {
-  const [selectedRegion, setSelectedRegion] = useState(null)
+  const [mode, setMode] = useState(params.get('mode') === 'osdr' ? 'osdr' : 'scenario')
+  const [selectedRegion, setSelectedRegion] = useState(params.get('region'))
   const [envKey, setEnvKey] = useState('iss')
+  const [crewId, setCrewId] = useState(osdr.crew[params.get('crew')] ? params.get('crew') : 'C001')
+  const [tpIndex, setTpIndex] = useState(Math.min(Math.max(Number(params.get('tp')) || 0, 0), osdr.timepoints.length - 1))
+  const [playing, setPlaying] = useState(false)
+
+  const isOsdr = mode === 'osdr'
   const env = environments[envKey]
-  const vitals = useMemo(() => applyThresholds(data.vitals, env), [env])
+  const timepoint = osdr.timepoints[tpIndex]
+
+  const vitals = useMemo(
+    () => (isOsdr ? buildOsdrVitals(osdr, crewId, timepoint) : applyThresholds(data.vitals, env)),
+    [isOsdr, crewId, timepoint, env],
+  )
 
   return (
     <div className="min-h-screen bg-slate-950 bg-[radial-gradient(ellipse_at_top,_#0c1a33,_transparent_60%)] text-slate-100">
@@ -36,37 +58,91 @@ export default function App() {
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
-            <HeaderStat icon={UserRound} label="Crew" value={data.astronautId} />
-            <HeaderStat icon={CalendarDays} label="Mission day" value={data.missionDay} />
+            <HeaderStat icon={UserRound} label="Crew" value={isOsdr ? crewId : data.astronautId} />
+            <HeaderStat icon={CalendarDays} label={isOsdr ? 'Timepoint' : 'Mission day'} value={isOsdr ? timepoint : data.missionDay} />
           </div>
         </div>
-        <div className="mx-auto mt-4 max-w-6xl">
-          <EnvironmentToggle environments={environments} value={envKey} onChange={setEnvKey} />
+
+        <div className="mx-auto mt-4 flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-3">
+          <div role="radiogroup" aria-label="Data source" className="inline-flex rounded-xl border border-slate-800 bg-slate-900/70 p-1">
+            {MODES.map(({ key, label, icon: Icon }) => (
+              <button
+                key={key}
+                role="radio"
+                aria-checked={mode === key}
+                onClick={() => {
+                  setMode(key)
+                  setPlaying(false)
+                }}
+                className={`flex items-center gap-2 rounded-lg px-3.5 py-1.5 text-sm font-medium transition focus-visible:outline-2 focus-visible:outline-sky-400 ${
+                  mode === key ? 'bg-violet-500/20 text-violet-200 ring-1 ring-violet-500/40' : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Icon className="h-4 w-4" />
+                {label}
+              </button>
+            ))}
+          </div>
+          {!isOsdr && <EnvironmentToggle environments={environments} value={envKey} onChange={setEnvKey} />}
         </div>
       </header>
 
-      <main className="mx-auto grid max-w-6xl gap-6 px-4 py-6 sm:px-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-        <section className="flex flex-col items-center rounded-2xl border border-slate-800 bg-slate-900/40 p-4">
-          <h2 className="mb-2 self-start text-xs uppercase tracking-widest text-slate-500">Body map · {env.label}</h2>
-          <AstroAvatar vitals={vitals} selectedRegion={selectedRegion} onSelectRegion={setSelectedRegion} />
-          <ul className="mt-4 flex flex-wrap justify-center gap-4 text-xs text-slate-400">
-            {Object.values(STATUS).map((s) => (
-              <li key={s.label} className="flex items-center gap-1.5">
-                <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: s.hex }} />
-                {s.label}
-              </li>
-            ))}
-            <li className="text-slate-500">Outer field = radiation &amp; immune</li>
-          </ul>
-        </section>
+      <main className="mx-auto max-w-6xl space-y-6 px-4 py-6 sm:px-8">
+        {isOsdr && (
+          <SimulationControls
+            osdr={osdr}
+            crewId={crewId}
+            onCrewChange={setCrewId}
+            tpIndex={tpIndex}
+            onTpIndexChange={setTpIndex}
+            playing={playing}
+            onPlayingChange={setPlaying}
+          />
+        )}
 
-        <section className="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6">
-          <MissionDashboard vitals={vitals} env={env} selectedRegion={selectedRegion} onSelectRegion={setSelectedRegion} />
-        </section>
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+          <section className="flex flex-col items-center rounded-2xl border border-slate-800 bg-slate-900/40 p-4">
+            <h2 className="mb-2 self-start text-xs uppercase tracking-widest text-slate-500">
+              Body map · {isOsdr ? `${crewId} @ ${timepoint}` : env.label}
+            </h2>
+            <AstroAvatar vitals={vitals} selectedRegion={selectedRegion} onSelectRegion={setSelectedRegion} />
+            <ul className="mt-4 flex flex-wrap justify-center gap-4 text-xs text-slate-400">
+              {Object.values(STATUS).map((s) => (
+                <li key={s.label} className="flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: s.hex }} />
+                  {s.label}
+                </li>
+              ))}
+              {isOsdr && (
+                <li className="flex items-center gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-slate-600" />
+                  No data
+                </li>
+              )}
+              <li className="text-slate-500">Outer field = {isOsdr ? 'immune' : 'radiation & immune'}</li>
+            </ul>
+          </section>
+
+          <section className="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 sm:p-6">
+            <MissionDashboard
+              vitals={vitals}
+              env={isOsdr ? null : env}
+              selectedRegion={selectedRegion}
+              onSelectRegion={setSelectedRegion}
+            />
+          </section>
+        </div>
       </main>
 
       <footer className="mx-auto max-w-6xl px-4 pb-6 text-xs text-slate-600 sm:px-8">
-        Thresholds are demo placeholders pending NASA-STD-3001 / HRP sourcing.
+        {isOsdr ? (
+          <>
+            Data: {osdr.source.title}. {osdr.source.repository}, {osdr.source.studies.join('; ')}. {osdr.source.note} Status:
+            green = within lab reference range, yellow = outside by ≤10%, red = further outside.
+          </>
+        ) : (
+          'Scenario mode uses mock values; thresholds are demo placeholders pending NASA-STD-3001 / HRP sourcing.'
+        )}
       </footer>
     </div>
   )

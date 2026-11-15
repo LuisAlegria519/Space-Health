@@ -1,5 +1,5 @@
 import { Activity, ChevronRight, MousePointerClick, RadioTower } from 'lucide-react'
-import { getStatus, REGION_ICONS } from '../constants/status'
+import { getStatus, regionIcon } from '../constants/status'
 
 function StatusBadge({ status }) {
   const s = getStatus(status)
@@ -13,8 +13,6 @@ function StatusBadge({ status }) {
 
 function MetricCard({ metric, env }) {
   const s = getStatus(metric.status)
-  const t = metric.threshold
-  const op = t?.worse === 'higher' ? '≥' : '≤'
   return (
     <li className="rounded-xl border border-slate-800 bg-slate-900/70 p-4" style={{ borderLeft: `4px solid ${s.hex}` }}>
       <div className="flex items-start justify-between gap-3">
@@ -26,12 +24,8 @@ function MetricCard({ metric, env }) {
         {metric.unit && <span className="ml-1.5 text-base font-normal text-slate-400">{metric.unit}</span>}
       </p>
       <p className="mt-2 text-sm text-slate-400">{metric.description}</p>
-      {t && (
-        <p className="mt-3 font-mono text-xs text-slate-500">
-          {env.label} limits: caution {op} {t.yellow} · critical {op} {t.red}
-        </p>
-      )}
-      {metric.status === 'red' && env.commDelayMin >= 5 && (
+      {metric.limitsText && <p className="mt-3 font-mono text-xs text-slate-500">{metric.limitsText}</p>}
+      {metric.status === 'red' && env?.commDelayMin >= 5 && (
         <p className="mt-3 flex items-start gap-2 rounded-lg bg-red-500/10 p-2 text-xs text-red-300 ring-1 ring-red-500/30">
           <RadioTower className="mt-0.5 h-3.5 w-3.5 shrink-0" />
           ~{env.commDelayMin} min one-way delay to Earth. Crew-autonomous response required.
@@ -54,7 +48,7 @@ function Overview({ vitals, onSelectRegion }) {
       </div>
       <ul className="space-y-3">
         {regions.map(([key, region]) => {
-          const Icon = REGION_ICONS[key] ?? Activity
+          const Icon = regionIcon(key, region) ?? Activity
           return (
             <li key={key}>
               <button
@@ -79,7 +73,7 @@ export default function MissionDashboard({ vitals, env, selectedRegion, onSelect
 
   if (!region) return <Overview vitals={vitals} onSelectRegion={onSelectRegion} />
 
-  const Icon = REGION_ICONS[selectedRegion] ?? Activity
+  const Icon = regionIcon(selectedRegion, region) ?? Activity
   const s = getStatus(region.overallStatus)
 
   return (
@@ -100,11 +94,16 @@ export default function MissionDashboard({ vitals, env, selectedRegion, onSelect
         </div>
         <StatusBadge status={region.overallStatus} />
       </div>
-      <ul className="grid gap-4 sm:grid-cols-2">
-        {region.metrics.map((m) => (
-          <MetricCard key={m.id} metric={m} env={env} />
-        ))}
-      </ul>
+      {region.metrics.length > 0 && (
+        <ul className="grid gap-4 sm:grid-cols-2">
+          {region.metrics.map((m) => (
+            <MetricCard key={m.id} metric={m} env={env} />
+          ))}
+        </ul>
+      )}
+      {region.emptyNote && (
+        <p className="mt-4 rounded-xl border border-dashed border-slate-700 p-4 text-sm text-slate-400">{region.emptyNote}</p>
+      )}
     </div>
   )
 }

@@ -1,0 +1,6400 @@
+{
+ "source": {
+  "title": "SpaceX Inspiration4 crew clinical labs (CBC + CMP)",
+  "repository": "NASA Open Science Data Repository (OSDR) / Ames Life Sciences Data Archive",
+  "studies": [
+   "OSD-569 (LSDS-7, Complete Blood Count)",
+   "OSD-575 (LSDS-8, Comprehensive Metabolic Panel)"
+  ],
+  "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575",
+  "mission": "Inspiration4, 3-day free-flyer orbital mission (Sept 2021)",
+  "note": "L-n = days before launch, R+n = days after return. No in-flight samples."
+ },
+ "timepoints": [
+  "L-92",
+  "L-44",
+  "L-3",
+  "R+1",
+  "R+45",
+  "R+82",
+  "R+194"
+ ],
+ "crew": {
+  "C001": {
+   "sex": "M",
+   "analytes": {
+    "WHITE BLOOD CELL COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 5.4,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-44": {
+       "value": 5.5,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-3": {
+       "value": 7,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+1": {
+       "value": 5,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+45": {
+       "value": 4.9,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+82": {
+       "value": 4.9,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+194": {
+       "value": 4.9,
+       "min": 3.8,
+       "max": 10.8
+      }
+     }
+    },
+    "RED BLOOD CELL COUNT": {
+     "unit": "Million/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 4.58,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "L-44": {
+       "value": 4.85,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "L-3": {
+       "value": 4.69,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+1": {
+       "value": 4.84,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+45": {
+       "value": 4.63,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+82": {
+       "value": 5.02,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+194": {
+       "value": 4.66,
+       "min": 4.2,
+       "max": 5.8
+      }
+     }
+    },
+    "HEMOGLOBIN": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 14.1,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "L-44": {
+       "value": 14.9,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "L-3": {
+       "value": 14.7,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+1": {
+       "value": 14.7,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+45": {
+       "value": 14.3,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+82": {
+       "value": 15.7,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+194": {
+       "value": 14.1,
+       "min": 13.2,
+       "max": 17.1
+      }
+     }
+    },
+    "HEMATOCRIT": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 42.5,
+       "min": 38.5,
+       "max": 50
+      },
+      "L-44": {
+       "value": 45.1,
+       "min": 38.5,
+       "max": 50
+      },
+      "L-3": {
+       "value": 44.5,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+1": {
+       "value": 43.6,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+45": {
+       "value": 43.3,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+82": {
+       "value": 46.1,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+194": {
+       "value": 41.8,
+       "min": 38.5,
+       "max": 50
+      }
+     }
+    },
+    "MCV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 92.8,
+       "min": 80,
+       "max": 100
+      },
+      "L-44": {
+       "value": 93,
+       "min": 80,
+       "max": 100
+      },
+      "L-3": {
+       "value": 94.9,
+       "min": 80,
+       "max": 100
+      },
+      "R+1": {
+       "value": 90.1,
+       "min": 80,
+       "max": 100
+      },
+      "R+45": {
+       "value": 93.5,
+       "min": 80,
+       "max": 100
+      },
+      "R+82": {
+       "value": 91.8,
+       "min": 80,
+       "max": 100
+      },
+      "R+194": {
+       "value": 89.7,
+       "min": 80,
+       "max": 100
+      }
+     }
+    },
+    "MCH": {
+     "unit": "pg",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 30.8,
+       "min": 27,
+       "max": 33
+      },
+      "L-44": {
+       "value": 30.7,
+       "min": 27,
+       "max": 33
+      },
+      "L-3": {
+       "value": 31.3,
+       "min": 27,
+       "max": 33
+      },
+      "R+1": {
+       "value": 30.4,
+       "min": 27,
+       "max": 33
+      },
+      "R+45": {
+       "value": 30.9,
+       "min": 27,
+       "max": 33
+      },
+      "R+82": {
+       "value": 31.3,
+       "min": 27,
+       "max": 33
+      },
+      "R+194": {
+       "value": 30.3,
+       "min": 27,
+       "max": 33
+      }
+     }
+    },
+    "MCHC": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 33.2,
+       "min": 32,
+       "max": 36
+      },
+      "L-44": {
+       "value": 33,
+       "min": 32,
+       "max": 36
+      },
+      "L-3": {
+       "value": 33,
+       "min": 32,
+       "max": 36
+      },
+      "R+1": {
+       "value": 33.7,
+       "min": 32,
+       "max": 36
+      },
+      "R+45": {
+       "value": 33,
+       "min": 32,
+       "max": 36
+      },
+      "R+82": {
+       "value": 34.1,
+       "min": 32,
+       "max": 36
+      },
+      "R+194": {
+       "value": 33.7,
+       "min": 32,
+       "max": 36
+      }
+     }
+    },
+    "RDW": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 13,
+       "min": 11,
+       "max": 15
+      },
+      "L-44": {
+       "value": 12.6,
+       "min": 11,
+       "max": 15
+      },
+      "L-3": {
+       "value": 12.6,
+       "min": 11,
+       "max": 15
+      },
+      "R+1": {
+       "value": 12.5,
+       "min": 11,
+       "max": 15
+      },
+      "R+45": {
+       "value": 12.8,
+       "min": 11,
+       "max": 15
+      },
+      "R+82": {
+       "value": 12.3,
+       "min": 11,
+       "max": 15
+      },
+      "R+194": {
+       "value": 12.8,
+       "min": 11,
+       "max": 15
+      }
+     }
+    },
+    "PLATELET COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 241,
+       "min": 140,
+       "max": 400
+      },
+      "L-44": {
+       "value": 237,
+       "min": 140,
+       "max": 400
+      },
+      "L-3": {
+       "value": 258,
+       "min": 140,
+       "max": 400
+      },
+      "R+1": {
+       "value": 227,
+       "min": 140,
+       "max": 400
+      },
+      "R+45": {
+       "value": 228,
+       "min": 140,
+       "max": 400
+      },
+      "R+82": {
+       "value": 257,
+       "min": 140,
+       "max": 400
+      },
+      "R+194": {
+       "value": 214,
+       "min": 140,
+       "max": 400
+      }
+     }
+    },
+    "MPV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 10.3,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-44": {
+       "value": 10.6,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-3": {
+       "value": 10.9,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+1": {
+       "value": 10.8,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+45": {
+       "value": 10.5,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+82": {
+       "value": 10.8,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+194": {
+       "value": 10.5,
+       "min": 7.5,
+       "max": 12.5
+      }
+     }
+    },
+    "ABSOLUTE NEUTROPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 2349,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-44": {
+       "value": 2998,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-3": {
+       "value": 3570,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+1": {
+       "value": 2685,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+45": {
+       "value": 2200,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+82": {
+       "value": 1994,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+194": {
+       "value": 2391,
+       "min": 1500,
+       "max": 7800
+      }
+     }
+    },
+    "ABSOLUTE LYMPHOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 2241,
+       "min": 850,
+       "max": 3900
+      },
+      "L-44": {
+       "value": 1859,
+       "min": 850,
+       "max": 3900
+      },
+      "L-3": {
+       "value": 2667,
+       "min": 850,
+       "max": 3900
+      },
+      "R+1": {
+       "value": 1640,
+       "min": 850,
+       "max": 3900
+      },
+      "R+45": {
+       "value": 2146,
+       "min": 850,
+       "max": 3900
+      },
+      "R+82": {
+       "value": 2171,
+       "min": 850,
+       "max": 3900
+      },
+      "R+194": {
+       "value": 1847,
+       "min": 850,
+       "max": 3900
+      }
+     }
+    },
+    "ABSOLUTE MONOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 481,
+       "min": 200,
+       "max": 950
+      },
+      "L-44": {
+       "value": 391,
+       "min": 200,
+       "max": 950
+      },
+      "L-3": {
+       "value": 553,
+       "min": 200,
+       "max": 950
+      },
+      "R+1": {
+       "value": 455,
+       "min": 200,
+       "max": 950
+      },
+      "R+45": {
+       "value": 368,
+       "min": 200,
+       "max": 950
+      },
+      "R+82": {
+       "value": 485,
+       "min": 200,
+       "max": 950
+      },
+      "R+194": {
+       "value": 392,
+       "min": 200,
+       "max": 950
+      }
+     }
+    },
+    "ABSOLUTE EOSINOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 259,
+       "min": 15,
+       "max": 500
+      },
+      "L-44": {
+       "value": 204,
+       "min": 15,
+       "max": 500
+      },
+      "L-3": {
+       "value": 161,
+       "min": 15,
+       "max": 500
+      },
+      "R+1": {
+       "value": 170,
+       "min": 15,
+       "max": 500
+      },
+      "R+45": {
+       "value": 127,
+       "min": 15,
+       "max": 500
+      },
+      "R+82": {
+       "value": 181,
+       "min": 15,
+       "max": 500
+      },
+      "R+194": {
+       "value": 221,
+       "min": 15,
+       "max": 500
+      }
+     }
+    },
+    "ABSOLUTE BASOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 70,
+       "min": 0,
+       "max": 200
+      },
+      "L-44": {
+       "value": 50,
+       "min": 0,
+       "max": 200
+      },
+      "L-3": {
+       "value": 49,
+       "min": 0,
+       "max": 200
+      },
+      "R+1": {
+       "value": 50,
+       "min": 0,
+       "max": 200
+      },
+      "R+45": {
+       "value": 59,
+       "min": 0,
+       "max": 200
+      },
+      "R+82": {
+       "value": 69,
+       "min": 0,
+       "max": 200
+      },
+      "R+194": {
+       "value": 49,
+       "min": 0,
+       "max": 200
+      }
+     }
+    },
+    "NEUTROPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 43.5,
+       "min": 38,
+       "max": 80
+      },
+      "L-44": {
+       "value": 54.5,
+       "min": 38,
+       "max": 80
+      },
+      "L-3": {
+       "value": 51,
+       "min": 38,
+       "max": 80
+      },
+      "R+1": {
+       "value": 53.7,
+       "min": 38,
+       "max": 80
+      },
+      "R+45": {
+       "value": 44.9,
+       "min": 38,
+       "max": 80
+      },
+      "R+82": {
+       "value": 40.7,
+       "min": 38,
+       "max": 80
+      },
+      "R+194": {
+       "value": 48.8,
+       "min": 38,
+       "max": 80
+      }
+     }
+    },
+    "LYMPHOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 41.5,
+       "min": 15,
+       "max": 49
+      },
+      "L-44": {
+       "value": 33.8,
+       "min": 15,
+       "max": 49
+      },
+      "L-3": {
+       "value": 38.1,
+       "min": 15,
+       "max": 49
+      },
+      "R+1": {
+       "value": 32.8,
+       "min": 15,
+       "max": 49
+      },
+      "R+45": {
+       "value": 43.8,
+       "min": 15,
+       "max": 49
+      },
+      "R+82": {
+       "value": 44.3,
+       "min": 15,
+       "max": 49
+      },
+      "R+194": {
+       "value": 37.7,
+       "min": 15,
+       "max": 49
+      }
+     }
+    },
+    "MONOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 8.9,
+       "min": 0,
+       "max": 13
+      },
+      "L-44": {
+       "value": 7.1,
+       "min": 0,
+       "max": 13
+      },
+      "L-3": {
+       "value": 7.9,
+       "min": 0,
+       "max": 13
+      },
+      "R+1": {
+       "value": 9.1,
+       "min": 0,
+       "max": 13
+      },
+      "R+45": {
+       "value": 7.5,
+       "min": 0,
+       "max": 13
+      },
+      "R+82": {
+       "value": 9.9,
+       "min": 0,
+       "max": 13
+      },
+      "R+194": {
+       "value": 8,
+       "min": 0,
+       "max": 13
+      }
+     }
+    },
+    "EOSINOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 4.8,
+       "min": 0,
+       "max": 8
+      },
+      "L-44": {
+       "value": 3.7,
+       "min": 0,
+       "max": 8
+      },
+      "L-3": {
+       "value": 2.3,
+       "min": 0,
+       "max": 8
+      },
+      "R+1": {
+       "value": 3.4,
+       "min": 0,
+       "max": 8
+      },
+      "R+45": {
+       "value": 2.6,
+       "min": 0,
+       "max": 8
+      },
+      "R+82": {
+       "value": 3.7,
+       "min": 0,
+       "max": 8
+      },
+      "R+194": {
+       "value": 4.5,
+       "min": 0,
+       "max": 8
+      }
+     }
+    },
+    "BASOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 1.3,
+       "min": 0,
+       "max": 2
+      },
+      "L-44": {
+       "value": 0.9,
+       "min": 0,
+       "max": 2
+      },
+      "L-3": {
+       "value": 0.7,
+       "min": 0,
+       "max": 2
+      },
+      "R+1": {
+       "value": 1,
+       "min": 0,
+       "max": 2
+      },
+      "R+45": {
+       "value": 1.2,
+       "min": 0,
+       "max": 2
+      },
+      "R+82": {
+       "value": 1.4,
+       "min": 0,
+       "max": 2
+      },
+      "R+194": {
+       "value": 1,
+       "min": 0,
+       "max": 2
+      }
+     }
+    },
+    "GLUCOSE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 83,
+       "min": 65,
+       "max": 99
+      },
+      "L-44": {
+       "value": 80,
+       "min": 65,
+       "max": 99
+      },
+      "L-3": {
+       "value": 69,
+       "min": 65,
+       "max": 99
+      },
+      "R+1": {
+       "value": 90,
+       "min": 65,
+       "max": 99
+      },
+      "R+45": {
+       "value": 84,
+       "min": 65,
+       "max": 99
+      },
+      "R+82": {
+       "value": 91,
+       "min": 65,
+       "max": 99
+      },
+      "R+194": {
+       "value": 87,
+       "min": 65,
+       "max": 99
+      }
+     }
+    },
+    "UREA NITROGEN (BUN)": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 25,
+       "min": 7,
+       "max": 25
+      },
+      "L-44": {
+       "value": 19,
+       "min": 7,
+       "max": 25
+      },
+      "L-3": {
+       "value": 20,
+       "min": 7,
+       "max": 25
+      },
+      "R+1": {
+       "value": 18,
+       "min": 7,
+       "max": 25
+      },
+      "R+45": {
+       "value": 15,
+       "min": 7,
+       "max": 25
+      },
+      "R+82": {
+       "value": 22,
+       "min": 7,
+       "max": 25
+      },
+      "R+194": {
+       "value": 28,
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    "CREATININE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 1.24,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "L-44": {
+       "value": 1.1,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "L-3": {
+       "value": 1.37,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+1": {
+       "value": 1.12,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+45": {
+       "value": 1.11,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+82": {
+       "value": 1.25,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+194": {
+       "value": 1.29,
+       "min": 0.6,
+       "max": 1.35
+      }
+     }
+    },
+    "eGFR NON-AFR. AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 73,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 85,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 65,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 83,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 84,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 73,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 69,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "eGFR AFRICAN AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 85,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 98,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 75,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 96,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 97,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 84,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 80,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "BUN/CREATININE RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-44": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-3": {
+       "value": 15,
+       "min": 6,
+       "max": 22
+      },
+      "R+1": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+45": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+82": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+194": {
+       "value": 22,
+       "min": 6,
+       "max": 22
+      }
+     }
+    },
+    "SODIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 141,
+       "min": 135,
+       "max": 146
+      },
+      "L-44": {
+       "value": 139,
+       "min": 135,
+       "max": 146
+      },
+      "L-3": {
+       "value": 142,
+       "min": 135,
+       "max": 146
+      },
+      "R+1": {
+       "value": 138,
+       "min": 135,
+       "max": 146
+      },
+      "R+45": {
+       "value": 138,
+       "min": 135,
+       "max": 146
+      },
+      "R+82": {
+       "value": 140,
+       "min": 135,
+       "max": 146
+      },
+      "R+194": {
+       "value": 137,
+       "min": 135,
+       "max": 146
+      }
+     }
+    },
+    "POTASSIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 4.6,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-44": {
+       "value": 4.2,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-3": {
+       "value": 3.9,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+1": {
+       "value": 4.4,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+45": {
+       "value": 4,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+82": {
+       "value": 4.3,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+194": {
+       "value": 4.3,
+       "min": 3.5,
+       "max": 5.3
+      }
+     }
+    },
+    "CHLORIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 104,
+       "min": 98,
+       "max": 110
+      },
+      "L-44": {
+       "value": 101,
+       "min": 98,
+       "max": 110
+      },
+      "L-3": {
+       "value": 102,
+       "min": 98,
+       "max": 110
+      },
+      "R+1": {
+       "value": 102,
+       "min": 98,
+       "max": 110
+      },
+      "R+45": {
+       "value": 100,
+       "min": 98,
+       "max": 110
+      },
+      "R+82": {
+       "value": 101,
+       "min": 98,
+       "max": 110
+      },
+      "R+194": {
+       "value": 102,
+       "min": 98,
+       "max": 110
+      }
+     }
+    },
+    "CARBON DIOXIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      },
+      "L-44": {
+       "value": 26,
+       "min": 20,
+       "max": 32
+      },
+      "L-3": {
+       "value": 26,
+       "min": 20,
+       "max": 32
+      },
+      "R+1": {
+       "value": 24,
+       "min": 20,
+       "max": 32
+      },
+      "R+45": {
+       "value": 28,
+       "min": 20,
+       "max": 32
+      },
+      "R+82": {
+       "value": 27,
+       "min": 20,
+       "max": 32
+      },
+      "R+194": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      }
+     }
+    },
+    "CALCIUM": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 9.7,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "L-44": {
+       "value": 10,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "L-3": {
+       "value": 9.6,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+1": {
+       "value": 9.7,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+45": {
+       "value": 9.6,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+82": {
+       "value": 10.1,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+194": {
+       "value": 9.4,
+       "min": 8.6,
+       "max": 10.3
+      }
+     }
+    },
+    "PROTEIN; TOTAL": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 7.3,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-44": {
+       "value": 7.7,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-3": {
+       "value": 7.4,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+1": {
+       "value": 7.5,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+45": {
+       "value": 7.2,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+82": {
+       "value": 7.8,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+194": {
+       "value": 7,
+       "min": 6.1,
+       "max": 8.1
+      }
+     }
+    },
+    "ALBUMIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 5,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-44": {
+       "value": 5,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-3": {
+       "value": 4.9,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+1": {
+       "value": 4.9,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+45": {
+       "value": 4.9,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+82": {
+       "value": 5.1,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+194": {
+       "value": 4.6,
+       "min": 3.6,
+       "max": 5.1
+      }
+     }
+    },
+    "GLOBULIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 2.3,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-44": {
+       "value": 2.7,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-3": {
+       "value": 2.5,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+1": {
+       "value": 2.6,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+45": {
+       "value": 2.3,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+82": {
+       "value": 2.7,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+194": {
+       "value": 2.4,
+       "min": 1.9,
+       "max": 3.7
+      }
+     }
+    },
+    "ALBUMIN/GLOBULIN RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 2.2,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-44": {
+       "value": 1.9,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-3": {
+       "value": 2,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+1": {
+       "value": 1.9,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+45": {
+       "value": 2.1,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+82": {
+       "value": 1.9,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+194": {
+       "value": 1.9,
+       "min": 1,
+       "max": 2.5
+      }
+     }
+    },
+    "BILIRUBIN; TOTAL": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 0.7,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-44": {
+       "value": 0.9,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-3": {
+       "value": 1,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+1": {
+       "value": 1.2,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+45": {
+       "value": null,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+82": {
+       "value": 1.2,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+194": {
+       "value": 0.8,
+       "min": 0.2,
+       "max": 1.2
+      }
+     }
+    },
+    "ALKALINE PHOSPHATASE": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 51,
+       "min": 36,
+       "max": 130
+      },
+      "L-44": {
+       "value": 46,
+       "min": 36,
+       "max": 130
+      },
+      "L-3": {
+       "value": 45,
+       "min": 36,
+       "max": 130
+      },
+      "R+1": {
+       "value": 52,
+       "min": 36,
+       "max": 130
+      },
+      "R+45": {
+       "value": 46,
+       "min": 36,
+       "max": 130
+      },
+      "R+82": {
+       "value": 49,
+       "min": 36,
+       "max": 130
+      },
+      "R+194": {
+       "value": 50,
+       "min": 36,
+       "max": 130
+      }
+     }
+    },
+    "AST": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 15,
+       "min": 10,
+       "max": 40
+      },
+      "L-44": {
+       "value": 18,
+       "min": 10,
+       "max": 40
+      },
+      "L-3": {
+       "value": 15,
+       "min": 10,
+       "max": 40
+      },
+      "R+1": {
+       "value": 16,
+       "min": 10,
+       "max": 40
+      },
+      "R+45": {
+       "value": 13,
+       "min": 10,
+       "max": 40
+      },
+      "R+82": {
+       "value": 16,
+       "min": 10,
+       "max": 40
+      },
+      "R+194": {
+       "value": 12,
+       "min": 10,
+       "max": 40
+      }
+     }
+    },
+    "ALT": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 15,
+       "min": 9,
+       "max": 46
+      },
+      "L-44": {
+       "value": 16,
+       "min": 9,
+       "max": 46
+      },
+      "L-3": {
+       "value": 13,
+       "min": 9,
+       "max": 46
+      },
+      "R+1": {
+       "value": 9,
+       "min": 9,
+       "max": 46
+      },
+      "R+45": {
+       "value": 11,
+       "min": 9,
+       "max": 46
+      },
+      "R+82": {
+       "value": 15,
+       "min": 9,
+       "max": 46
+      },
+      "R+194": {
+       "value": 15,
+       "min": 9,
+       "max": 46
+      }
+     }
+    }
+   }
+  },
+  "C002": {
+   "sex": "F",
+   "analytes": {
+    "WHITE BLOOD CELL COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 6.5,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-44": {
+       "value": 5.4,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-3": {
+       "value": 7.2,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+1": {
+       "value": 5.5,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+45": {
+       "value": 6.4,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+82": {
+       "value": 5.3,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+194": {
+       "value": 6.4,
+       "min": 3.8,
+       "max": 10.8
+      }
+     }
+    },
+    "RED BLOOD CELL COUNT": {
+     "unit": "Million/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 4.36,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "L-44": {
+       "value": 3.93,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "L-3": {
+       "value": 3.72,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "R+1": {
+       "value": 4.02,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "R+45": {
+       "value": 4.02,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "R+82": {
+       "value": 3.84,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "R+194": {
+       "value": 4.11,
+       "min": 3.8,
+       "max": 5.1
+      }
+     }
+    },
+    "HEMOGLOBIN": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 13.2,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "L-44": {
+       "value": 12.8,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "L-3": {
+       "value": 11.5,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "R+1": {
+       "value": 12.1,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "R+45": {
+       "value": 12.2,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "R+82": {
+       "value": 11.5,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "R+194": {
+       "value": 12.7,
+       "min": 11.7,
+       "max": 15.5
+      }
+     }
+    },
+    "HEMATOCRIT": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 40.8,
+       "min": 35,
+       "max": 45
+      },
+      "L-44": {
+       "value": 37.8,
+       "min": 35,
+       "max": 45
+      },
+      "L-3": {
+       "value": 35.9,
+       "min": 35,
+       "max": 45
+      },
+      "R+1": {
+       "value": 36.4,
+       "min": 35,
+       "max": 45
+      },
+      "R+45": {
+       "value": 37.1,
+       "min": 35,
+       "max": 45
+      },
+      "R+82": {
+       "value": 34.7,
+       "min": 35,
+       "max": 45
+      },
+      "R+194": {
+       "value": 38.3,
+       "min": 35,
+       "max": 45
+      }
+     }
+    },
+    "MCV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 93.6,
+       "min": 80,
+       "max": 100
+      },
+      "L-44": {
+       "value": 96.2,
+       "min": 80,
+       "max": 100
+      },
+      "L-3": {
+       "value": 96.5,
+       "min": 80,
+       "max": 100
+      },
+      "R+1": {
+       "value": 90.5,
+       "min": 80,
+       "max": 100
+      },
+      "R+45": {
+       "value": 92.3,
+       "min": 80,
+       "max": 100
+      },
+      "R+82": {
+       "value": 90.4,
+       "min": 80,
+       "max": 100
+      }
+     }
+    },
+    "MCH": {
+     "unit": "pg",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 30.3,
+       "min": 27,
+       "max": 33
+      },
+      "L-44": {
+       "value": 32.6,
+       "min": 27,
+       "max": 33
+      },
+      "L-3": {
+       "value": 30.9,
+       "min": 27,
+       "max": 33
+      },
+      "R+1": {
+       "value": 30.1,
+       "min": 27,
+       "max": 33
+      },
+      "R+45": {
+       "value": 30.3,
+       "min": 27,
+       "max": 33
+      },
+      "R+82": {
+       "value": 29.9,
+       "min": 27,
+       "max": 33
+      },
+      "R+194": {
+       "value": 30.9,
+       "min": 27,
+       "max": 33
+      }
+     }
+    },
+    "RDW": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 12.7,
+       "min": 11,
+       "max": 15
+      },
+      "L-44": {
+       "value": 12.6,
+       "min": 11,
+       "max": 15
+      },
+      "L-3": {
+       "value": 12.1,
+       "min": 11,
+       "max": 15
+      },
+      "R+1": {
+       "value": 11.8,
+       "min": 11,
+       "max": 15
+      },
+      "R+45": {
+       "value": 12,
+       "min": 11,
+       "max": 15
+      },
+      "R+82": {
+       "value": 11.9,
+       "min": 11,
+       "max": 15
+      },
+      "R+194": {
+       "value": 12.1,
+       "min": 11,
+       "max": 15
+      }
+     }
+    },
+    "PLATELET COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 241,
+       "min": 140,
+       "max": 400
+      },
+      "L-44": {
+       "value": 229,
+       "min": 140,
+       "max": 400
+      },
+      "L-3": {
+       "value": 241,
+       "min": 140,
+       "max": 400
+      },
+      "R+1": {
+       "value": 252,
+       "min": 140,
+       "max": 400
+      },
+      "R+45": {
+       "value": 252,
+       "min": 140,
+       "max": 400
+      },
+      "R+82": {
+       "value": 245,
+       "min": 140,
+       "max": 400
+      },
+      "R+194": {
+       "value": 243,
+       "min": 140,
+       "max": 400
+      }
+     }
+    },
+    "MPV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 10.1,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-44": {
+       "value": 10.9,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-3": {
+       "value": 10.8,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+1": {
+       "value": 10.2,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+45": {
+       "value": 11,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+82": {
+       "value": 10.5,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+194": {
+       "value": 10.8,
+       "min": 7.5,
+       "max": 12.5
+      }
+     }
+    },
+    "ABSOLUTE NEUTROPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 3705,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-44": {
+       "value": 2873,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-3": {
+       "value": 3701,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+1": {
+       "value": 3328,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+45": {
+       "value": 2765,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+82": {
+       "value": 3132,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+194": {
+       "value": 3123,
+       "min": 1500,
+       "max": 7800
+      }
+     }
+    },
+    "ABSOLUTE LYMPHOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 2119,
+       "min": 850,
+       "max": 3900
+      },
+      "L-44": {
+       "value": 1982,
+       "min": 850,
+       "max": 3900
+      },
+      "L-3": {
+       "value": 2873,
+       "min": 850,
+       "max": 3900
+      },
+      "R+1": {
+       "value": 1540,
+       "min": 850,
+       "max": 3900
+      },
+      "R+45": {
+       "value": 2874,
+       "min": 850,
+       "max": 3900
+      },
+      "R+82": {
+       "value": 1701,
+       "min": 850,
+       "max": 3900
+      },
+      "R+194": {
+       "value": 2573,
+       "min": 850,
+       "max": 3900
+      }
+     }
+    },
+    "ABSOLUTE MONOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 364,
+       "min": 200,
+       "max": 950
+      },
+      "L-44": {
+       "value": 302,
+       "min": 200,
+       "max": 950
+      },
+      "L-3": {
+       "value": 446,
+       "min": 200,
+       "max": 950
+      },
+      "R+1": {
+       "value": 435,
+       "min": 200,
+       "max": 950
+      },
+      "R+45": {
+       "value": 499,
+       "min": 200,
+       "max": 950
+      },
+      "R+82": {
+       "value": 345,
+       "min": 200,
+       "max": 950
+      },
+      "R+194": {
+       "value": 518,
+       "min": 200,
+       "max": 950
+      }
+     }
+    },
+    "ABSOLUTE EOSINOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 280,
+       "min": 15,
+       "max": 500
+      },
+      "L-44": {
+       "value": 211,
+       "min": 15,
+       "max": 500
+      },
+      "L-3": {
+       "value": 151,
+       "min": 15,
+       "max": 500
+      },
+      "R+1": {
+       "value": 160,
+       "min": 15,
+       "max": 500
+      },
+      "R+45": {
+       "value": 211,
+       "min": 15,
+       "max": 500
+      },
+      "R+82": {
+       "value": 90,
+       "min": 15,
+       "max": 500
+      },
+      "R+194": {
+       "value": 166,
+       "min": 15,
+       "max": 500
+      }
+     }
+    },
+    "ABSOLUTE BASOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 33,
+       "min": 0,
+       "max": 200
+      },
+      "L-44": {
+       "value": 32,
+       "min": 0,
+       "max": 200
+      },
+      "L-3": {
+       "value": 29,
+       "min": 0,
+       "max": 200
+      },
+      "R+1": {
+       "value": 39,
+       "min": 0,
+       "max": 200
+      },
+      "R+45": {
+       "value": 51,
+       "min": 0,
+       "max": 200
+      },
+      "R+82": {
+       "value": 32,
+       "min": 0,
+       "max": 200
+      },
+      "R+194": {
+       "value": 19,
+       "min": 0,
+       "max": 200
+      }
+     }
+    },
+    "NEUTROPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 57,
+       "min": 38,
+       "max": 80
+      },
+      "L-44": {
+       "value": 53.2,
+       "min": 38,
+       "max": 80
+      },
+      "L-3": {
+       "value": 51.4,
+       "min": 38,
+       "max": 80
+      },
+      "R+1": {
+       "value": 60.5,
+       "min": 38,
+       "max": 80
+      },
+      "R+45": {
+       "value": 43.2,
+       "min": 38,
+       "max": 80
+      },
+      "R+82": {
+       "value": 59.1,
+       "min": 38,
+       "max": 80
+      },
+      "R+194": {
+       "value": 48.8,
+       "min": 38,
+       "max": 80
+      }
+     }
+    },
+    "LYMPHOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 32.6,
+       "min": 15,
+       "max": 49
+      },
+      "L-44": {
+       "value": 36.7,
+       "min": 15,
+       "max": 49
+      },
+      "L-3": {
+       "value": 39.9,
+       "min": 15,
+       "max": 49
+      },
+      "R+1": {
+       "value": 28,
+       "min": 15,
+       "max": 49
+      },
+      "R+45": {
+       "value": 44.9,
+       "min": 15,
+       "max": 49
+      },
+      "R+82": {
+       "value": 32.1,
+       "min": 15,
+       "max": 49
+      },
+      "R+194": {
+       "value": 40.2,
+       "min": 15,
+       "max": 49
+      }
+     }
+    },
+    "MONOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 5.6,
+       "min": 0,
+       "max": 13
+      },
+      "L-44": {
+       "value": 5.6,
+       "min": 0,
+       "max": 13
+      },
+      "L-3": {
+       "value": 6.2,
+       "min": 0,
+       "max": 13
+      },
+      "R+1": {
+       "value": 7.9,
+       "min": 0,
+       "max": 13
+      },
+      "R+45": {
+       "value": 7.8,
+       "min": 0,
+       "max": 13
+      },
+      "R+82": {
+       "value": 6.5,
+       "min": 0,
+       "max": 13
+      },
+      "R+194": {
+       "value": 8.1,
+       "min": 0,
+       "max": 13
+      }
+     }
+    },
+    "EOSINOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 4.3,
+       "min": 0,
+       "max": 8
+      },
+      "L-44": {
+       "value": 3.9,
+       "min": 0,
+       "max": 8
+      },
+      "L-3": {
+       "value": 2.1,
+       "min": 0,
+       "max": 8
+      },
+      "R+1": {
+       "value": 2.9,
+       "min": 0,
+       "max": 8
+      },
+      "R+45": {
+       "value": 3.3,
+       "min": 0,
+       "max": 8
+      },
+      "R+82": {
+       "value": 1.7,
+       "min": 0,
+       "max": 8
+      },
+      "R+194": {
+       "value": 2.6,
+       "min": 0,
+       "max": 8
+      }
+     }
+    },
+    "BASOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 0.5,
+       "min": 0,
+       "max": 2
+      },
+      "L-44": {
+       "value": 0.6,
+       "min": 0,
+       "max": 2
+      },
+      "L-3": {
+       "value": 0.4,
+       "min": 0,
+       "max": 2
+      },
+      "R+1": {
+       "value": 0.7,
+       "min": 0,
+       "max": 2
+      },
+      "R+45": {
+       "value": 0.8,
+       "min": 0,
+       "max": 2
+      },
+      "R+82": {
+       "value": 0.6,
+       "min": 0,
+       "max": 2
+      },
+      "R+194": {
+       "value": 0.3,
+       "min": 0,
+       "max": 2
+      }
+     }
+    },
+    "MCHC": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "R+45": {
+       "value": 32.9,
+       "min": 32,
+       "max": 36
+      },
+      "R+82": {
+       "value": 33.1,
+       "min": 32,
+       "max": 36
+      },
+      "R+194": {
+       "value": 33.2,
+       "min": 32,
+       "max": 36
+      }
+     }
+    },
+    "GLUCOSE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 69,
+       "min": 65,
+       "max": 99
+      },
+      "L-44": {
+       "value": 72,
+       "min": 65,
+       "max": 99
+      },
+      "L-3": {
+       "value": 78,
+       "min": 65,
+       "max": 99
+      },
+      "R+1": {
+       "value": 83,
+       "min": 65,
+       "max": 99
+      },
+      "R+45": {
+       "value": 44,
+       "min": 65,
+       "max": 99
+      },
+      "R+82": {
+       "value": 77,
+       "min": 65,
+       "max": 99
+      },
+      "R+194": {
+       "value": 84,
+       "min": 65,
+       "max": 99
+      }
+     }
+    },
+    "UREA NITROGEN (BUN)": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 14,
+       "min": 7,
+       "max": 25
+      },
+      "L-44": {
+       "value": 16,
+       "min": 7,
+       "max": 25
+      },
+      "L-3": {
+       "value": 17,
+       "min": 7,
+       "max": 25
+      },
+      "R+1": {
+       "value": 20,
+       "min": 7,
+       "max": 25
+      },
+      "R+45": {
+       "value": 19,
+       "min": 7,
+       "max": 25
+      },
+      "R+82": {
+       "value": 16,
+       "min": 7,
+       "max": 25
+      },
+      "R+194": {
+       "value": 18,
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    "CREATININE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 0.83,
+       "min": 0.5,
+       "max": 1.05
+      },
+      "L-44": {
+       "value": 0.88,
+       "min": 0.5,
+       "max": 1.05
+      },
+      "L-3": {
+       "value": 0.96,
+       "min": 0.5,
+       "max": 1.05
+      },
+      "R+1": {
+       "value": 0.95,
+       "min": 0.5,
+       "max": 1.05
+      },
+      "R+45": {
+       "value": 1.02,
+       "min": 0.5,
+       "max": 1.05
+      },
+      "R+82": {
+       "value": 0.82,
+       "min": 0.5,
+       "max": 1.05
+      },
+      "R+194": {
+       "value": 1.02,
+       "min": 0.5,
+       "max": 1.05
+      }
+     }
+    },
+    "eGFR NON-AFR. AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 82,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 76,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 68,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 69,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 64,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 83,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 63,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "eGFR AFRICAN AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 95,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 88,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 79,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 80,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 74,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 96,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 73,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "BUN/CREATININE RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-44": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-3": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+1": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+45": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+194": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      }
+     }
+    },
+    "SODIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 142,
+       "min": 135,
+       "max": 146
+      },
+      "L-44": {
+       "value": 141,
+       "min": 135,
+       "max": 146
+      },
+      "L-3": {
+       "value": 143,
+       "min": 135,
+       "max": 146
+      },
+      "R+1": {
+       "value": 137,
+       "min": 135,
+       "max": 146
+      },
+      "R+45": {
+       "value": 140,
+       "min": 135,
+       "max": 146
+      },
+      "R+82": {
+       "value": 141,
+       "min": 135,
+       "max": 146
+      },
+      "R+194": {
+       "value": 138,
+       "min": 135,
+       "max": 146
+      }
+     }
+    },
+    "POTASSIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 3.9,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-44": {
+       "value": 4,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-3": {
+       "value": 3.8,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+1": {
+       "value": 3.5,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+45": {
+       "value": 4.1,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+82": {
+       "value": 3.7,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+194": {
+       "value": 4.4,
+       "min": 3.5,
+       "max": 5.3
+      }
+     }
+    },
+    "CHLORIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 103,
+       "min": 98,
+       "max": 110
+      },
+      "L-44": {
+       "value": 103,
+       "min": 98,
+       "max": 110
+      },
+      "L-3": {
+       "value": 106,
+       "min": 98,
+       "max": 110
+      },
+      "R+1": {
+       "value": 103,
+       "min": 98,
+       "max": 110
+      },
+      "R+45": {
+       "value": 104,
+       "min": 98,
+       "max": 110
+      },
+      "R+82": {
+       "value": 105,
+       "min": 98,
+       "max": 110
+      },
+      "R+194": {
+       "value": 104,
+       "min": 98,
+       "max": 110
+      }
+     }
+    },
+    "CARBON DIOXIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      },
+      "L-44": {
+       "value": 26,
+       "min": 20,
+       "max": 32
+      },
+      "L-3": {
+       "value": 24,
+       "min": 20,
+       "max": 32
+      },
+      "R+1": {
+       "value": 22,
+       "min": 20,
+       "max": 32
+      },
+      "R+45": {
+       "value": 21,
+       "min": 20,
+       "max": 32
+      },
+      "R+82": {
+       "value": 25,
+       "min": 20,
+       "max": 32
+      },
+      "R+194": {
+       "value": 20,
+       "min": 20,
+       "max": 32
+      }
+     }
+    },
+    "CALCIUM": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 10.2,
+       "min": 8.6,
+       "max": 10.4
+      },
+      "L-44": {
+       "value": 9.7,
+       "min": 8.6,
+       "max": 10.4
+      },
+      "L-3": {
+       "value": 9.3,
+       "min": 8.6,
+       "max": 10.4
+      },
+      "R+1": {
+       "value": 9.2,
+       "min": 8.6,
+       "max": 10.4
+      },
+      "R+45": {
+       "value": 9.3,
+       "min": 8.6,
+       "max": 10.4
+      },
+      "R+82": {
+       "value": 9.7,
+       "min": 8.6,
+       "max": 10.4
+      },
+      "R+194": {
+       "value": 9.5,
+       "min": 8.6,
+       "max": 10.4
+      }
+     }
+    },
+    "PROTEIN; TOTAL": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 7.9,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-44": {
+       "value": 7.6,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-3": {
+       "value": 7,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+1": {
+       "value": 7.4,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+45": {
+       "value": 6.8,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+82": {
+       "value": 7.3,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+194": {
+       "value": 7.3,
+       "min": 6.1,
+       "max": 8.1
+      }
+     }
+    },
+    "ALBUMIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 4.9,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-44": {
+       "value": 4.6,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-3": {
+       "value": 4.3,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+1": {
+       "value": 4.4,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+45": {
+       "value": 4.2,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+82": {
+       "value": 4.5,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+194": {
+       "value": 4.3,
+       "min": 3.6,
+       "max": 5.1
+      }
+     }
+    },
+    "GLOBULIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 3,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-44": {
+       "value": 3,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-3": {
+       "value": 2.7,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+1": {
+       "value": 3,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+45": {
+       "value": 2.6,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+82": {
+       "value": 2.8,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+194": {
+       "value": 3,
+       "min": 1.9,
+       "max": 3.7
+      }
+     }
+    },
+    "ALBUMIN/GLOBULIN RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-44": {
+       "value": 1.5,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-3": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+1": {
+       "value": 1.5,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+45": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+82": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+194": {
+       "value": 1.4,
+       "min": 1,
+       "max": 2.5
+      }
+     }
+    },
+    "BILIRUBIN; TOTAL": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 0.5,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-44": {
+       "value": 0.4,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-3": {
+       "value": 0.3,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+1": {
+       "value": 0.4,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+45": {
+       "value": 0.5,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+82": {
+       "value": 0.5,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+194": {
+       "value": 0.3,
+       "min": 0.2,
+       "max": 1.2
+      }
+     }
+    },
+    "ALKALINE PHOSPHATASE": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 73,
+       "min": 37,
+       "max": 153
+      },
+      "L-44": {
+       "value": 78,
+       "min": 37,
+       "max": 153
+      },
+      "L-3": {
+       "value": 68,
+       "min": 37,
+       "max": 153
+      },
+      "R+1": {
+       "value": 71,
+       "min": 37,
+       "max": 153
+      },
+      "R+45": {
+       "value": 65,
+       "min": 37,
+       "max": 153
+      },
+      "R+82": {
+       "value": 65,
+       "min": 37,
+       "max": 153
+      },
+      "R+194": {
+       "value": 66,
+       "min": 37,
+       "max": 153
+      }
+     }
+    },
+    "AST": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 19,
+       "min": 10,
+       "max": 35
+      },
+      "L-44": {
+       "value": 31,
+       "min": 10,
+       "max": 35
+      },
+      "L-3": {
+       "value": 40,
+       "min": 10,
+       "max": 35
+      },
+      "R+1": {
+       "value": 23,
+       "min": 10,
+       "max": 35
+      },
+      "R+45": {
+       "value": 17,
+       "min": 10,
+       "max": 35
+      },
+      "R+82": {
+       "value": 21,
+       "min": 10,
+       "max": 35
+      },
+      "R+194": {
+       "value": 24,
+       "min": 10,
+       "max": 35
+      }
+     }
+    },
+    "ALT": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 16,
+       "min": 6,
+       "max": 29
+      },
+      "L-44": {
+       "value": 24,
+       "min": 6,
+       "max": 29
+      },
+      "L-3": {
+       "value": 19,
+       "min": 6,
+       "max": 29
+      },
+      "R+1": {
+       "value": 16,
+       "min": 6,
+       "max": 29
+      },
+      "R+45": {
+       "value": 14,
+       "min": 6,
+       "max": 29
+      },
+      "R+82": {
+       "value": 17,
+       "min": 6,
+       "max": 29
+      },
+      "R+194": {
+       "value": 17,
+       "min": 6,
+       "max": 29
+      }
+     }
+    }
+   }
+  },
+  "C004": {
+   "sex": "M",
+   "analytes": {
+    "WHITE BLOOD CELL COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 7.7,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-44": {
+       "value": 6.4,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-3": {
+       "value": 10.6,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+1": {
+       "value": 8.1,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+45": {
+       "value": 6.8,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+82": {
+       "value": 7.9,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+194": {
+       "value": 8.3,
+       "min": 3.8,
+       "max": 10.8
+      }
+     }
+    },
+    "RED BLOOD CELL COUNT": {
+     "unit": "Million/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 5.48,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "L-44": {
+       "value": 5.57,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "L-3": {
+       "value": 5.4,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+1": {
+       "value": 5.55,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+45": {
+       "value": 5.54,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+82": {
+       "value": 5.45,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+194": {
+       "value": 5.58,
+       "min": 4.2,
+       "max": 5.8
+      }
+     }
+    },
+    "HEMOGLOBIN": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 17,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "L-44": {
+       "value": 16.6,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "L-3": {
+       "value": 16.8,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+1": {
+       "value": 16.5,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+45": {
+       "value": 16.8,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+82": {
+       "value": 16.4,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+194": {
+       "value": 16.5,
+       "min": 13.2,
+       "max": 17.1
+      }
+     }
+    },
+    "HEMATOCRIT": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 49.1,
+       "min": 38.5,
+       "max": 50
+      },
+      "L-44": {
+       "value": 50,
+       "min": 38.5,
+       "max": 50
+      },
+      "L-3": {
+       "value": 49,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+1": {
+       "value": 48.3,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+45": {
+       "value": 49,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+82": {
+       "value": 47.5,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+194": {
+       "value": 48,
+       "min": 38.5,
+       "max": 50
+      }
+     }
+    },
+    "MCV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 89.6,
+       "min": 80,
+       "max": 100
+      },
+      "L-44": {
+       "value": 89.8,
+       "min": 80,
+       "max": 100
+      },
+      "L-3": {
+       "value": 90.7,
+       "min": 80,
+       "max": 100
+      },
+      "R+1": {
+       "value": 87,
+       "min": 80,
+       "max": 100
+      },
+      "R+45": {
+       "value": 88.4,
+       "min": 80,
+       "max": 100
+      },
+      "R+82": {
+       "value": 87.2,
+       "min": 80,
+       "max": 100
+      },
+      "R+194": {
+       "value": 86,
+       "min": 80,
+       "max": 100
+      }
+     }
+    },
+    "MCHC": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 34.6,
+       "min": 32,
+       "max": 36
+      },
+      "L-44": {
+       "value": 33.2,
+       "min": 32,
+       "max": 36
+      },
+      "L-3": {
+       "value": 34.3,
+       "min": 32,
+       "max": 36
+      },
+      "R+1": {
+       "value": 34.2,
+       "min": 32,
+       "max": 36
+      },
+      "R+45": {
+       "value": 34.3,
+       "min": 32,
+       "max": 36
+      },
+      "R+82": {
+       "value": 34.5,
+       "min": 32,
+       "max": 36
+      },
+      "R+194": {
+       "value": 34.4,
+       "min": 32,
+       "max": 36
+      }
+     }
+    },
+    "RDW": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 12.5,
+       "min": 11,
+       "max": 15
+      },
+      "L-44": {
+       "value": 12.7,
+       "min": 11,
+       "max": 15
+      },
+      "L-3": {
+       "value": 13.3,
+       "min": 11,
+       "max": 15
+      },
+      "R+1": {
+       "value": 13.2,
+       "min": 11,
+       "max": 15
+      },
+      "R+45": {
+       "value": 12.6,
+       "min": 11,
+       "max": 15
+      },
+      "R+82": {
+       "value": 12.9,
+       "min": 11,
+       "max": 15
+      },
+      "R+194": {
+       "value": 13.1,
+       "min": 11,
+       "max": 15
+      }
+     }
+    },
+    "PLATELET COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 239,
+       "min": 140,
+       "max": 400
+      },
+      "L-44": {
+       "value": 227,
+       "min": 140,
+       "max": 400
+      },
+      "L-3": {
+       "value": 295,
+       "min": 140,
+       "max": 400
+      },
+      "R+1": {
+       "value": 240,
+       "min": 140,
+       "max": 400
+      },
+      "R+45": {
+       "value": 281,
+       "min": 140,
+       "max": 400
+      },
+      "R+82": {
+       "value": 198,
+       "min": 140,
+       "max": 400
+      },
+      "R+194": {
+       "value": 256,
+       "min": 140,
+       "max": 400
+      }
+     }
+    },
+    "MPV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 9.5,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-44": {
+       "value": 9.9,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-3": {
+       "value": 10.1,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+1": {
+       "value": 10,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+45": {
+       "value": 9.9,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+82": {
+       "value": 10.4,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+194": {
+       "value": 9.8,
+       "min": 7.5,
+       "max": 12.5
+      }
+     }
+    },
+    "ABSOLUTE NEUTROPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 4766,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-44": {
+       "value": 3699,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-3": {
+       "value": 6318,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+1": {
+       "value": 4528,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+45": {
+       "value": 3618,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+82": {
+       "value": 4361,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+194": {
+       "value": 4200,
+       "min": 1500,
+       "max": 7800
+      }
+     }
+    },
+    "ABSOLUTE LYMPHOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 1786,
+       "min": 850,
+       "max": 3900
+      },
+      "L-44": {
+       "value": 1613,
+       "min": 850,
+       "max": 3900
+      },
+      "L-3": {
+       "value": 2947,
+       "min": 850,
+       "max": 3900
+      },
+      "R+1": {
+       "value": 2155,
+       "min": 850,
+       "max": 3900
+      },
+      "R+45": {
+       "value": 1938,
+       "min": 850,
+       "max": 3900
+      },
+      "R+82": {
+       "value": 2307,
+       "min": 850,
+       "max": 3900
+      },
+      "R+194": {
+       "value": 2639,
+       "min": 850,
+       "max": 3900
+      }
+     }
+    },
+    "ABSOLUTE MONOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 870,
+       "min": 200,
+       "max": 950
+      },
+      "L-44": {
+       "value": 832,
+       "min": 200,
+       "max": 950
+      },
+      "L-3": {
+       "value": 965,
+       "min": 200,
+       "max": 950
+      },
+      "R+1": {
+       "value": 1029,
+       "min": 200,
+       "max": 950
+      },
+      "R+45": {
+       "value": 898,
+       "min": 200,
+       "max": 950
+      },
+      "R+82": {
+       "value": 916,
+       "min": 200,
+       "max": 950
+      },
+      "R+194": {
+       "value": 988,
+       "min": 200,
+       "max": 950
+      }
+     }
+    },
+    "ABSOLUTE EOSINOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 200,
+       "min": 15,
+       "max": 500
+      },
+      "L-44": {
+       "value": 173,
+       "min": 15,
+       "max": 500
+      },
+      "L-3": {
+       "value": 276,
+       "min": 15,
+       "max": 500
+      },
+      "R+1": {
+       "value": 300,
+       "min": 15,
+       "max": 500
+      },
+      "R+45": {
+       "value": 258,
+       "min": 15,
+       "max": 500
+      },
+      "R+82": {
+       "value": 269,
+       "min": 15,
+       "max": 500
+      },
+      "R+194": {
+       "value": 374,
+       "min": 15,
+       "max": 500
+      }
+     }
+    },
+    "ABSOLUTE BASOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 77,
+       "min": 0,
+       "max": 200
+      },
+      "L-44": {
+       "value": 83,
+       "min": 0,
+       "max": 200
+      },
+      "L-3": {
+       "value": 95,
+       "min": 0,
+       "max": 200
+      },
+      "R+1": {
+       "value": 89,
+       "min": 0,
+       "max": 200
+      },
+      "R+45": {
+       "value": 88,
+       "min": 0,
+       "max": 200
+      },
+      "R+82": {
+       "value": 47,
+       "min": 0,
+       "max": 200
+      },
+      "R+194": {
+       "value": 100,
+       "min": 0,
+       "max": 200
+      }
+     }
+    },
+    "NEUTROPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 61.9,
+       "min": 38,
+       "max": 80
+      },
+      "L-44": {
+       "value": 57.8,
+       "min": 38,
+       "max": 80
+      },
+      "L-3": {
+       "value": 59.6,
+       "min": 38,
+       "max": 80
+      },
+      "R+1": {
+       "value": 55.9,
+       "min": 38,
+       "max": 80
+      },
+      "R+45": {
+       "value": 53.2,
+       "min": 38,
+       "max": 80
+      },
+      "R+82": {
+       "value": 55.2,
+       "min": 38,
+       "max": 80
+      },
+      "R+194": {
+       "value": 50.6,
+       "min": 38,
+       "max": 80
+      }
+     }
+    },
+    "LYMPHOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 23.2,
+       "min": 15,
+       "max": 49
+      },
+      "L-44": {
+       "value": 25.2,
+       "min": 15,
+       "max": 49
+      },
+      "L-3": {
+       "value": 27.8,
+       "min": 15,
+       "max": 49
+      },
+      "R+1": {
+       "value": 26.6,
+       "min": 15,
+       "max": 49
+      },
+      "R+45": {
+       "value": 28.5,
+       "min": 15,
+       "max": 49
+      },
+      "R+82": {
+       "value": 29.2,
+       "min": 15,
+       "max": 49
+      },
+      "R+194": {
+       "value": 31.8,
+       "min": 15,
+       "max": 49
+      }
+     }
+    },
+    "MONOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 11.3,
+       "min": 0,
+       "max": 13
+      },
+      "L-44": {
+       "value": 13,
+       "min": 0,
+       "max": 13
+      },
+      "L-3": {
+       "value": 9.1,
+       "min": 0,
+       "max": 13
+      },
+      "R+1": {
+       "value": 12.7,
+       "min": 0,
+       "max": 13
+      },
+      "R+45": {
+       "value": 13.2,
+       "min": 0,
+       "max": 13
+      },
+      "R+82": {
+       "value": 11.6,
+       "min": 0,
+       "max": 13
+      },
+      "R+194": {
+       "value": 11.9,
+       "min": 0,
+       "max": 13
+      }
+     }
+    },
+    "EOSINOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 2.6,
+       "min": 0,
+       "max": 8
+      },
+      "L-44": {
+       "value": 2.7,
+       "min": 0,
+       "max": 8
+      },
+      "L-3": {
+       "value": 2.6,
+       "min": 0,
+       "max": 8
+      },
+      "R+1": {
+       "value": 3.7,
+       "min": 0,
+       "max": 8
+      },
+      "R+45": {
+       "value": 3.8,
+       "min": 0,
+       "max": 8
+      },
+      "R+82": {
+       "value": 3.4,
+       "min": 0,
+       "max": 8
+      },
+      "R+194": {
+       "value": 4.5,
+       "min": 0,
+       "max": 8
+      }
+     }
+    },
+    "BASOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 1,
+       "min": 0,
+       "max": 2
+      },
+      "L-44": {
+       "value": 1.3,
+       "min": 0,
+       "max": 2
+      },
+      "L-3": {
+       "value": 0.9,
+       "min": 0,
+       "max": 2
+      },
+      "R+1": {
+       "value": 1.1,
+       "min": 0,
+       "max": 2
+      },
+      "R+45": {
+       "value": 1.3,
+       "min": 0,
+       "max": 2
+      },
+      "R+82": {
+       "value": 0.6,
+       "min": 0,
+       "max": 2
+      },
+      "R+194": {
+       "value": 1.2,
+       "min": 0,
+       "max": 2
+      }
+     }
+    },
+    "MCH": {
+     "unit": "pg",
+     "test": "CBC",
+     "values": {
+      "L-44": {
+       "value": 29.8,
+       "min": 27,
+       "max": 33
+      },
+      "L-3": {
+       "value": 31.1,
+       "min": 27,
+       "max": 33
+      },
+      "R+1": {
+       "value": 29.7,
+       "min": 27,
+       "max": 33
+      },
+      "R+45": {
+       "value": 30.3,
+       "min": 27,
+       "max": 33
+      },
+      "R+82": {
+       "value": 30.1,
+       "min": 27,
+       "max": 33
+      },
+      "R+194": {
+       "value": 29.6,
+       "min": 27,
+       "max": 33
+      }
+     }
+    },
+    "GLUCOSE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 100,
+       "min": 65,
+       "max": 99
+      },
+      "L-44": {
+       "value": 83,
+       "min": 65,
+       "max": 99
+      },
+      "L-3": {
+       "value": 56,
+       "min": 65,
+       "max": 99
+      },
+      "R+1": {
+       "value": 97,
+       "min": 65,
+       "max": 99
+      },
+      "R+45": {
+       "value": 43,
+       "min": 65,
+       "max": 99
+      },
+      "R+82": {
+       "value": 80,
+       "min": 65,
+       "max": 99
+      },
+      "R+194": {
+       "value": 84,
+       "min": 65,
+       "max": 99
+      }
+     }
+    },
+    "UREA NITROGEN (BUN)": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 22,
+       "min": 7,
+       "max": 25
+      },
+      "L-44": {
+       "value": 19,
+       "min": 7,
+       "max": 25
+      },
+      "L-3": {
+       "value": 19,
+       "min": 7,
+       "max": 25
+      },
+      "R+1": {
+       "value": 26,
+       "min": 7,
+       "max": 25
+      },
+      "R+45": {
+       "value": 21,
+       "min": 7,
+       "max": 25
+      },
+      "R+82": {
+       "value": 16,
+       "min": 7,
+       "max": 25
+      },
+      "R+194": {
+       "value": 27,
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    "CREATININE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 1.14,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "L-44": {
+       "value": 1.08,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "L-3": {
+       "value": 1.13,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+1": {
+       "value": 1.15,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+45": {
+       "value": 1.08,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+82": {
+       "value": 1.11,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+194": {
+       "value": 1.31,
+       "min": 0.6,
+       "max": 1.35
+      }
+     }
+    },
+    "eGFR NON-AFR. AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 79,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 85,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 80,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 78,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 84,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 81,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 67,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "eGFR AFRICAN AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 92,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 98,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 92,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 90,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 98,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 94,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 77,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "BUN/CREATININE RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-44": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-3": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+1": {
+       "value": 23,
+       "min": 6,
+       "max": 22
+      },
+      "R+45": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+82": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+194": {
+       "value": 21,
+       "min": 6,
+       "max": 22
+      }
+     }
+    },
+    "SODIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 138,
+       "min": 135,
+       "max": 146
+      },
+      "L-44": {
+       "value": 140,
+       "min": 135,
+       "max": 146
+      },
+      "L-3": {
+       "value": 141,
+       "min": 135,
+       "max": 146
+      },
+      "R+1": {
+       "value": 140,
+       "min": 135,
+       "max": 146
+      },
+      "R+45": {
+       "value": 139,
+       "min": 135,
+       "max": 146
+      },
+      "R+82": {
+       "value": 140,
+       "min": 135,
+       "max": 146
+      },
+      "R+194": {
+       "value": 141,
+       "min": 135,
+       "max": 146
+      }
+     }
+    },
+    "POTASSIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 4.2,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-44": {
+       "value": 4.2,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-3": {
+       "value": 3.7,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+1": {
+       "value": 4,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+45": {
+       "value": 5.9,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+82": {
+       "value": 4.2,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+194": {
+       "value": 3.8,
+       "min": 3.5,
+       "max": 5.3
+      }
+     }
+    },
+    "CHLORIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 102,
+       "min": 98,
+       "max": 110
+      },
+      "L-44": {
+       "value": 103,
+       "min": 98,
+       "max": 110
+      },
+      "L-3": {
+       "value": 103,
+       "min": 98,
+       "max": 110
+      },
+      "R+1": {
+       "value": 105,
+       "min": 98,
+       "max": 110
+      },
+      "R+45": {
+       "value": 102,
+       "min": 98,
+       "max": 110
+      },
+      "R+82": {
+       "value": 103,
+       "min": 98,
+       "max": 110
+      },
+      "R+194": {
+       "value": 105,
+       "min": 98,
+       "max": 110
+      }
+     }
+    },
+    "CARBON DIOXIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      },
+      "L-44": {
+       "value": 24,
+       "min": 20,
+       "max": 32
+      },
+      "L-3": {
+       "value": 24,
+       "min": 20,
+       "max": 32
+      },
+      "R+1": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      },
+      "R+45": {
+       "value": 24,
+       "min": 20,
+       "max": 32
+      },
+      "R+82": {
+       "value": 24,
+       "min": 20,
+       "max": 32
+      },
+      "R+194": {
+       "value": 19,
+       "min": 20,
+       "max": 32
+      }
+     }
+    },
+    "CALCIUM": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 10,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "L-44": {
+       "value": 10.1,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "L-3": {
+       "value": 10.2,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+1": {
+       "value": 9.8,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+45": {
+       "value": 9.8,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+82": {
+       "value": 10,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+194": {
+       "value": 9.8,
+       "min": 8.6,
+       "max": 10.3
+      }
+     }
+    },
+    "PROTEIN; TOTAL": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 7.4,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-44": {
+       "value": 7.3,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-3": {
+       "value": 7.3,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+1": {
+       "value": 7.4,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+45": {
+       "value": 7.3,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+82": {
+       "value": 7.4,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+194": {
+       "value": 7.2,
+       "min": 6.1,
+       "max": 8.1
+      }
+     }
+    },
+    "ALBUMIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 4.6,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-44": {
+       "value": 4.4,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-3": {
+       "value": 4.6,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+1": {
+       "value": 4.5,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+45": {
+       "value": 4.5,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+82": {
+       "value": 4.6,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+194": {
+       "value": 4.3,
+       "min": 3.6,
+       "max": 5.1
+      }
+     }
+    },
+    "GLOBULIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 2.8,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-44": {
+       "value": 2.9,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-3": {
+       "value": 2.7,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+1": {
+       "value": 2.9,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+45": {
+       "value": 2.8,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+82": {
+       "value": 2.8,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+194": {
+       "value": 2.9,
+       "min": 1.9,
+       "max": 3.7
+      }
+     }
+    },
+    "ALBUMIN/GLOBULIN RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-44": {
+       "value": 1.5,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-3": {
+       "value": 1.7,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+1": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+45": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+82": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+194": {
+       "value": 1.5,
+       "min": 1,
+       "max": 2.5
+      }
+     }
+    },
+    "BILIRUBIN; TOTAL": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 0.7,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-44": {
+       "value": 0.7,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-3": {
+       "value": 0.5,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+1": {
+       "value": 0.4,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+45": {
+       "value": 0.7,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+82": {
+       "value": 1,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+194": {
+       "value": 0.5,
+       "min": 0.2,
+       "max": 1.2
+      }
+     }
+    },
+    "ALKALINE PHOSPHATASE": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 58,
+       "min": 36,
+       "max": 130
+      },
+      "L-44": {
+       "value": 56,
+       "min": 36,
+       "max": 130
+      },
+      "L-3": {
+       "value": 55,
+       "min": 36,
+       "max": 130
+      },
+      "R+1": {
+       "value": 62,
+       "min": 36,
+       "max": 130
+      },
+      "R+45": {
+       "value": 60,
+       "min": 36,
+       "max": 130
+      },
+      "R+82": {
+       "value": 54,
+       "min": 36,
+       "max": 130
+      },
+      "R+194": {
+       "value": 57,
+       "min": 36,
+       "max": 130
+      }
+     }
+    },
+    "AST": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 36,
+       "min": 10,
+       "max": 40
+      },
+      "L-44": {
+       "value": 44,
+       "min": 10,
+       "max": 40
+      },
+      "L-3": {
+       "value": 39,
+       "min": 10,
+       "max": 40
+      },
+      "R+1": {
+       "value": 48,
+       "min": 10,
+       "max": 40
+      },
+      "R+45": {
+       "value": 33,
+       "min": 10,
+       "max": 40
+      },
+      "R+82": {
+       "value": 25,
+       "min": 10,
+       "max": 40
+      },
+      "R+194": {
+       "value": 38,
+       "min": 10,
+       "max": 40
+      }
+     }
+    },
+    "ALT": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 37,
+       "min": 9,
+       "max": 46
+      },
+      "L-44": {
+       "value": 35,
+       "min": 9,
+       "max": 46
+      },
+      "L-3": {
+       "value": 37,
+       "min": 9,
+       "max": 46
+      },
+      "R+1": {
+       "value": 40,
+       "min": 9,
+       "max": 46
+      },
+      "R+45": {
+       "value": 32,
+       "min": 9,
+       "max": 46
+      },
+      "R+82": {
+       "value": 23,
+       "min": 9,
+       "max": 46
+      },
+      "R+194": {
+       "value": 43,
+       "min": 9,
+       "max": 46
+      }
+     }
+    }
+   }
+  },
+  "C003": {
+   "sex": "F",
+   "analytes": {
+    "WHITE BLOOD CELL COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 9.6,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-44": {
+       "value": 9.3,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "L-3": {
+       "value": 9.8,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+45": {
+       "value": 7.8,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+82": {
+       "value": 8.8,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+194": {
+       "value": 7.4,
+       "min": 3.8,
+       "max": 10.8
+      },
+      "R+1": {
+       "value": 7,
+       "min": 3.8,
+       "max": 10.8
+      }
+     }
+    },
+    "RED BLOOD CELL COUNT": {
+     "unit": "Million/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 4.46,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "L-44": {
+       "value": 4.62,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "L-3": {
+       "value": 4.5,
+       "min": 4.2,
+       "max": 5.8
+      },
+      "R+45": {
+       "value": 5.09,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "R+82": {
+       "value": 4.89,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "R+194": {
+       "value": 4.64,
+       "min": 3.8,
+       "max": 5.1
+      },
+      "R+1": {
+       "value": 4.67,
+       "min": 3.8,
+       "max": 5.1
+      }
+     }
+    },
+    "HEMOGLOBIN": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 13.2,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "L-44": {
+       "value": 14.4,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "L-3": {
+       "value": 13.3,
+       "min": 13.2,
+       "max": 17.1
+      },
+      "R+45": {
+       "value": 14.6,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "R+82": {
+       "value": 14.4,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "R+194": {
+       "value": 13.3,
+       "min": 11.7,
+       "max": 15.5
+      },
+      "R+1": {
+       "value": 13.5,
+       "min": 11.7,
+       "max": 15.5
+      }
+     }
+    },
+    "HEMATOCRIT": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 40.7,
+       "min": 38.5,
+       "max": 50
+      },
+      "L-44": {
+       "value": 42.6,
+       "min": 38.5,
+       "max": 50
+      },
+      "L-3": {
+       "value": 41.6,
+       "min": 38.5,
+       "max": 50
+      },
+      "R+45": {
+       "value": 44.3,
+       "min": 35,
+       "max": 45
+      },
+      "R+82": {
+       "value": 44.6,
+       "min": 35,
+       "max": 45
+      },
+      "R+194": {
+       "value": 40.4,
+       "min": 35,
+       "max": 45
+      },
+      "R+1": {
+       "value": 41.4,
+       "min": 35,
+       "max": 45
+      }
+     }
+    },
+    "MCV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 91.3,
+       "min": 80,
+       "max": 100
+      },
+      "L-44": {
+       "value": 92.2,
+       "min": 80,
+       "max": 100
+      },
+      "L-3": {
+       "value": 92.4,
+       "min": 80,
+       "max": 100
+      },
+      "R+45": {
+       "value": 87,
+       "min": 80,
+       "max": 100
+      },
+      "R+82": {
+       "value": 91.2,
+       "min": 80,
+       "max": 100
+      },
+      "R+194": {
+       "value": 87.1,
+       "min": 80,
+       "max": 100
+      },
+      "R+1": {
+       "value": 88.7,
+       "min": 80,
+       "max": 100
+      }
+     }
+    },
+    "MCHC": {
+     "unit": "g/dL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 29.6,
+       "min": 32,
+       "max": 36
+      },
+      "L-44": {
+       "value": 33.8,
+       "min": 32,
+       "max": 36
+      },
+      "L-3": {
+       "value": 32,
+       "min": 32,
+       "max": 36
+      },
+      "R+45": {
+       "value": 33,
+       "min": 32,
+       "max": 36
+      },
+      "R+82": {
+       "value": 32.3,
+       "min": 32,
+       "max": 36
+      },
+      "R+194": {
+       "value": 32.9,
+       "min": 32,
+       "max": 36
+      },
+      "R+1": {
+       "value": 32.6,
+       "min": 32,
+       "max": 36
+      }
+     }
+    },
+    "RDW": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 32.4,
+       "min": 11,
+       "max": 15
+      },
+      "L-44": {
+       "value": 13.2,
+       "min": 11,
+       "max": 15
+      },
+      "L-3": {
+       "value": 12.5,
+       "min": 11,
+       "max": 15
+      },
+      "R+45": {
+       "value": 12.5,
+       "min": 11,
+       "max": 15
+      },
+      "R+82": {
+       "value": 12.9,
+       "min": 11,
+       "max": 15
+      },
+      "R+194": {
+       "value": 13.1,
+       "min": 11,
+       "max": 15
+      },
+      "R+1": {
+       "value": 12.7,
+       "min": 11,
+       "max": 15
+      }
+     }
+    },
+    "PLATELET COUNT": {
+     "unit": "Thousand/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 12.9,
+       "min": 140,
+       "max": 400
+      },
+      "L-44": {
+       "value": 345,
+       "min": 140,
+       "max": 400
+      },
+      "L-3": {
+       "value": 367,
+       "min": 140,
+       "max": 400
+      },
+      "R+45": {
+       "value": 396,
+       "min": 140,
+       "max": 400
+      },
+      "R+82": {
+       "value": 345,
+       "min": 140,
+       "max": 400
+      },
+      "R+194": {
+       "value": 185,
+       "min": 140,
+       "max": 400
+      },
+      "R+1": {
+       "value": 359,
+       "min": 140,
+       "max": 400
+      }
+     }
+    },
+    "MPV": {
+     "unit": "fL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 330,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-44": {
+       "value": 10.3,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "L-3": {
+       "value": 10.8,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+45": {
+       "value": 10.4,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+82": {
+       "value": 10.2,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+194": {
+       "value": 10.2,
+       "min": 7.5,
+       "max": 12.5
+      },
+      "R+1": {
+       "value": 10.5,
+       "min": 7.5,
+       "max": 12.5
+      }
+     }
+    },
+    "ABSOLUTE NEUTROPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 10.1,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-44": {
+       "value": 6408,
+       "min": 1500,
+       "max": 7800
+      },
+      "L-3": {
+       "value": 5792,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+45": {
+       "value": 4618,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+82": {
+       "value": 4576,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+194": {
+       "value": 4151,
+       "min": 1500,
+       "max": 7800
+      },
+      "R+1": {
+       "value": 4088,
+       "min": 1500,
+       "max": 7800
+      }
+     }
+    },
+    "ABSOLUTE LYMPHOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 6826,
+       "min": 850,
+       "max": 3900
+      },
+      "L-44": {
+       "value": 2083,
+       "min": 850,
+       "max": 3900
+      },
+      "L-3": {
+       "value": 3156,
+       "min": 850,
+       "max": 3900
+      },
+      "R+45": {
+       "value": 2379,
+       "min": 850,
+       "max": 3900
+      },
+      "R+82": {
+       "value": 3247,
+       "min": 850,
+       "max": 3900
+      },
+      "R+194": {
+       "value": 2220,
+       "min": 850,
+       "max": 3900
+      },
+      "R+1": {
+       "value": 2086,
+       "min": 850,
+       "max": 3900
+      }
+     }
+    },
+    "ABSOLUTE MONOCYTES": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 1997,
+       "min": 200,
+       "max": 950
+      },
+      "L-44": {
+       "value": 632,
+       "min": 200,
+       "max": 950
+      },
+      "L-3": {
+       "value": 715,
+       "min": 200,
+       "max": 950
+      },
+      "R+45": {
+       "value": 624,
+       "min": 200,
+       "max": 950
+      },
+      "R+82": {
+       "value": 730,
+       "min": 200,
+       "max": 950
+      },
+      "R+194": {
+       "value": 762,
+       "min": 200,
+       "max": 950
+      },
+      "R+1": {
+       "value": 658,
+       "min": 200,
+       "max": 950
+      }
+     }
+    },
+    "ABSOLUTE EOSINOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 614,
+       "min": 15,
+       "max": 500
+      },
+      "L-44": {
+       "value": 130,
+       "min": 15,
+       "max": 500
+      },
+      "L-3": {
+       "value": 88,
+       "min": 15,
+       "max": 500
+      },
+      "R+45": {
+       "value": 117,
+       "min": 15,
+       "max": 500
+      },
+      "R+82": {
+       "value": 176,
+       "min": 15,
+       "max": 500
+      },
+      "R+194": {
+       "value": 207,
+       "min": 15,
+       "max": 500
+      },
+      "R+1": {
+       "value": 140,
+       "min": 15,
+       "max": 500
+      }
+     }
+    },
+    "ABSOLUTE BASOPHILS": {
+     "unit": "cells/uL",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 125,
+       "min": 0,
+       "max": 200
+      },
+      "L-44": {
+       "value": 47,
+       "min": 0,
+       "max": 200
+      },
+      "L-3": {
+       "value": 49,
+       "min": 0,
+       "max": 200
+      },
+      "R+45": {
+       "value": 62,
+       "min": 0,
+       "max": 200
+      },
+      "R+82": {
+       "value": 70,
+       "min": 0,
+       "max": 200
+      },
+      "R+194": {
+       "value": 59,
+       "min": 0,
+       "max": 200
+      },
+      "R+1": {
+       "value": 28,
+       "min": 0,
+       "max": 200
+      }
+     }
+    },
+    "NEUTROPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 71.1,
+       "min": 38,
+       "max": 80
+      },
+      "L-44": {
+       "value": 68.9,
+       "min": 38,
+       "max": 80
+      },
+      "L-3": {
+       "value": 59.1,
+       "min": 38,
+       "max": 80
+      },
+      "R+45": {
+       "value": 59.2,
+       "min": 38,
+       "max": 80
+      },
+      "R+82": {
+       "value": 52,
+       "min": 38,
+       "max": 80
+      },
+      "R+194": {
+       "value": 56.1,
+       "min": 38,
+       "max": 80
+      },
+      "R+1": {
+       "value": 58.4,
+       "min": 38,
+       "max": 80
+      }
+     }
+    },
+    "LYMPHOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 20.8,
+       "min": 15,
+       "max": 49
+      },
+      "L-44": {
+       "value": 22.4,
+       "min": 15,
+       "max": 49
+      },
+      "L-3": {
+       "value": 32.2,
+       "min": 15,
+       "max": 49
+      },
+      "R+45": {
+       "value": 30.5,
+       "min": 15,
+       "max": 49
+      },
+      "R+82": {
+       "value": 36.9,
+       "min": 15,
+       "max": 49
+      },
+      "R+194": {
+       "value": 30,
+       "min": 15,
+       "max": 49
+      },
+      "R+1": {
+       "value": 29.8,
+       "min": 15,
+       "max": 49
+      }
+     }
+    },
+    "MONOCYTES": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 6.4,
+       "min": 0,
+       "max": 13
+      },
+      "L-44": {
+       "value": 6.8,
+       "min": 0,
+       "max": 13
+      },
+      "L-3": {
+       "value": 7.3,
+       "min": 0,
+       "max": 13
+      },
+      "R+45": {
+       "value": 8,
+       "min": 0,
+       "max": 13
+      },
+      "R+82": {
+       "value": 8.3,
+       "min": 0,
+       "max": 13
+      },
+      "R+194": {
+       "value": 10.3,
+       "min": 0,
+       "max": 13
+      },
+      "R+1": {
+       "value": 9.4,
+       "min": 0,
+       "max": 13
+      }
+     }
+    },
+    "EOSINOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 1.3,
+       "min": 0,
+       "max": 8
+      },
+      "L-44": {
+       "value": 1.4,
+       "min": 0,
+       "max": 8
+      },
+      "L-3": {
+       "value": 0.9,
+       "min": 0,
+       "max": 8
+      },
+      "R+45": {
+       "value": 1.5,
+       "min": 0,
+       "max": 8
+      },
+      "R+82": {
+       "value": 2,
+       "min": 0,
+       "max": 8
+      },
+      "R+194": {
+       "value": 2.8,
+       "min": 0,
+       "max": 8
+      },
+      "R+1": {
+       "value": 2,
+       "min": 0,
+       "max": 8
+      }
+     }
+    },
+    "BASOPHILS": {
+     "unit": "%",
+     "test": "CBC",
+     "values": {
+      "L-92": {
+       "value": 0.4,
+       "min": 0,
+       "max": 2
+      },
+      "L-44": {
+       "value": 0.5,
+       "min": 0,
+       "max": 2
+      },
+      "L-3": {
+       "value": 0.5,
+       "min": 0,
+       "max": 2
+      },
+      "R+45": {
+       "value": 0.8,
+       "min": 0,
+       "max": 2
+      },
+      "R+82": {
+       "value": 0.8,
+       "min": 0,
+       "max": 2
+      },
+      "R+194": {
+       "value": 0.8,
+       "min": 0,
+       "max": 2
+      },
+      "R+1": {
+       "value": 0.4,
+       "min": 0,
+       "max": 2
+      }
+     }
+    },
+    "MCH": {
+     "unit": "pg",
+     "test": "CBC",
+     "values": {
+      "L-44": {
+       "value": 31.2,
+       "min": 27,
+       "max": 33
+      },
+      "L-3": {
+       "value": 29.6,
+       "min": 27,
+       "max": 33
+      },
+      "R+45": {
+       "value": 28.7,
+       "min": 27,
+       "max": 33
+      },
+      "R+82": {
+       "value": 29.4,
+       "min": 27,
+       "max": 33
+      },
+      "R+194": {
+       "value": 28.7,
+       "min": 27,
+       "max": 33
+      },
+      "R+1": {
+       "value": 28.9,
+       "min": 27,
+       "max": 33
+      }
+     }
+    },
+    "GLUCOSE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 77,
+       "min": 65,
+       "max": 99
+      },
+      "L-44": {
+       "value": 62,
+       "min": 65,
+       "max": 99
+      },
+      "L-3": {
+       "value": 75,
+       "min": 65,
+       "max": 99
+      },
+      "R+45": {
+       "value": 36,
+       "min": 65,
+       "max": 99
+      },
+      "R+82": {
+       "value": 80,
+       "min": 65,
+       "max": 99
+      },
+      "R+194": {
+       "value": 73,
+       "min": 65,
+       "max": 99
+      },
+      "R+1": {
+       "value": 103,
+       "min": 65,
+       "max": 99
+      }
+     }
+    },
+    "UREA NITROGEN (BUN)": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 17,
+       "min": 7,
+       "max": 25
+      },
+      "L-44": {
+       "value": 19,
+       "min": 7,
+       "max": 25
+      },
+      "L-3": {
+       "value": 26,
+       "min": 7,
+       "max": 25
+      },
+      "R+45": {
+       "value": 19,
+       "min": 7,
+       "max": 25
+      },
+      "R+82": {
+       "value": 23,
+       "min": 7,
+       "max": 25
+      },
+      "R+194": {
+       "value": 28,
+       "min": 7,
+       "max": 25
+      },
+      "R+1": {
+       "value": 21,
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    "CREATININE": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 1,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "L-44": {
+       "value": 1.03,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "L-3": {
+       "value": 1.08,
+       "min": 0.6,
+       "max": 1.35
+      },
+      "R+45": {
+       "value": 0.94,
+       "min": 0.5,
+       "max": 1.1
+      },
+      "R+82": {
+       "value": 0.89,
+       "min": 0.5,
+       "max": 1.1
+      },
+      "R+194": {
+       "value": 1.1,
+       "min": 0.5,
+       "max": 1.1
+      },
+      "R+1": {
+       "value": 0.89,
+       "min": 0.5,
+       "max": 1.1
+      }
+     }
+    },
+    "eGFR NON-AFR. AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 76,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 73,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 69,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 82,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 87,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 67,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 88,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "eGFR AFRICAN AMERICAN": {
+     "unit": "mL/min/1.73m2",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 88,
+       "min": 60,
+       "max": null
+      },
+      "L-44": {
+       "value": 85,
+       "min": 60,
+       "max": null
+      },
+      "L-3": {
+       "value": 80,
+       "min": 60,
+       "max": null
+      },
+      "R+45": {
+       "value": 95,
+       "min": 60,
+       "max": null
+      },
+      "R+82": {
+       "value": 101,
+       "min": 60,
+       "max": null
+      },
+      "R+194": {
+       "value": 78,
+       "min": 60,
+       "max": null
+      },
+      "R+1": {
+       "value": 102,
+       "min": 60,
+       "max": null
+      }
+     }
+    },
+    "BUN/CREATININE RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-44": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "L-3": {
+       "value": 24,
+       "min": 6,
+       "max": 22
+      },
+      "R+45": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+82": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      },
+      "R+194": {
+       "value": 25,
+       "min": 6,
+       "max": 22
+      },
+      "R+1": {
+       "value": null,
+       "min": 6,
+       "max": 22
+      }
+     }
+    },
+    "SODIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 139,
+       "min": 135,
+       "max": 146
+      },
+      "L-44": {
+       "value": 139,
+       "min": 135,
+       "max": 146
+      },
+      "L-3": {
+       "value": 138,
+       "min": 135,
+       "max": 146
+      },
+      "R+45": {
+       "value": 136,
+       "min": 135,
+       "max": 146
+      },
+      "R+82": {
+       "value": 138,
+       "min": 135,
+       "max": 146
+      },
+      "R+194": {
+       "value": 137,
+       "min": 135,
+       "max": 146
+      },
+      "R+1": {
+       "value": 137,
+       "min": 135,
+       "max": 146
+      }
+     }
+    },
+    "POTASSIUM": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 3.7,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-44": {
+       "value": 3.5,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "L-3": {
+       "value": 3.3,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+45": {
+       "value": 4.4,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+82": {
+       "value": 3.7,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+194": {
+       "value": 3.8,
+       "min": 3.5,
+       "max": 5.3
+      },
+      "R+1": {
+       "value": 3,
+       "min": 3.5,
+       "max": 5.3
+      }
+     }
+    },
+    "CHLORIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 102,
+       "min": 98,
+       "max": 110
+      },
+      "L-44": {
+       "value": 99,
+       "min": 98,
+       "max": 110
+      },
+      "L-3": {
+       "value": 101,
+       "min": 98,
+       "max": 110
+      },
+      "R+45": {
+       "value": 97,
+       "min": 98,
+       "max": 110
+      },
+      "R+82": {
+       "value": 102,
+       "min": 98,
+       "max": 110
+      },
+      "R+194": {
+       "value": 101,
+       "min": 98,
+       "max": 110
+      },
+      "R+1": {
+       "value": 103,
+       "min": 98,
+       "max": 110
+      }
+     }
+    },
+    "CARBON DIOXIDE": {
+     "unit": "mmol/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 20,
+       "min": 20,
+       "max": 32
+      },
+      "L-44": {
+       "value": 21,
+       "min": 20,
+       "max": 32
+      },
+      "L-3": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      },
+      "R+45": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      },
+      "R+82": {
+       "value": 23,
+       "min": 20,
+       "max": 32
+      },
+      "R+194": {
+       "value": 22,
+       "min": 20,
+       "max": 32
+      },
+      "R+1": {
+       "value": 20,
+       "min": 20,
+       "max": 32
+      }
+     }
+    },
+    "CALCIUM": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 9.3,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "L-44": {
+       "value": 10.3,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "L-3": {
+       "value": 9.5,
+       "min": 8.6,
+       "max": 10.3
+      },
+      "R+45": {
+       "value": 9.6,
+       "min": 8.6,
+       "max": 10.2
+      },
+      "R+82": {
+       "value": 10,
+       "min": 8.6,
+       "max": 10.2
+      },
+      "R+194": {
+       "value": 9.6,
+       "min": 8.6,
+       "max": 10.2
+      },
+      "R+1": {
+       "value": 9.4,
+       "min": 8.6,
+       "max": 10.2
+      }
+     }
+    },
+    "PROTEIN; TOTAL": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 7.1,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-44": {
+       "value": 8.8,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "L-3": {
+       "value": 6.8,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+45": {
+       "value": 7.4,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+82": {
+       "value": 7.5,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+194": {
+       "value": 7.3,
+       "min": 6.1,
+       "max": 8.1
+      },
+      "R+1": {
+       "value": 7.1,
+       "min": 6.1,
+       "max": 8.1
+      }
+     }
+    },
+    "ALBUMIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 4.4,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-44": {
+       "value": 4.9,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "L-3": {
+       "value": 4.2,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+45": {
+       "value": 4.5,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+82": {
+       "value": 4.8,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+194": {
+       "value": 4.4,
+       "min": 3.6,
+       "max": 5.1
+      },
+      "R+1": {
+       "value": 4.2,
+       "min": 3.6,
+       "max": 5.1
+      }
+     }
+    },
+    "GLOBULIN": {
+     "unit": "g/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 2.7,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-44": {
+       "value": 3.9,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "L-3": {
+       "value": 2.6,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+45": {
+       "value": 2.9,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+82": {
+       "value": 2.7,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+194": {
+       "value": 2.9,
+       "min": 1.9,
+       "max": 3.7
+      },
+      "R+1": {
+       "value": 2.9,
+       "min": 1.9,
+       "max": 3.7
+      }
+     }
+    },
+    "ALBUMIN/GLOBULIN RATIO": {
+     "unit": "(calc)",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-44": {
+       "value": 1.3,
+       "min": 1,
+       "max": 2.5
+      },
+      "L-3": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+45": {
+       "value": 1.6,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+82": {
+       "value": 1.8,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+194": {
+       "value": 1.5,
+       "min": 1,
+       "max": 2.5
+      },
+      "R+1": {
+       "value": 1.4,
+       "min": 1,
+       "max": 2.5
+      }
+     }
+    },
+    "BILIRUBIN; TOTAL": {
+     "unit": "mg/dL",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 0.3,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-44": {
+       "value": 0.4,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "L-3": {
+       "value": 0.2,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+45": {
+       "value": 0.7,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+82": {
+       "value": 0.5,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+194": {
+       "value": 0.3,
+       "min": 0.2,
+       "max": 1.2
+      },
+      "R+1": {
+       "value": 0.3,
+       "min": 0.2,
+       "max": 1.2
+      }
+     }
+    },
+    "ALKALINE PHOSPHATASE": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 33,
+       "min": 36,
+       "max": 130
+      },
+      "L-44": {
+       "value": 41,
+       "min": 36,
+       "max": 130
+      },
+      "L-3": {
+       "value": 31,
+       "min": 36,
+       "max": 130
+      },
+      "R+45": {
+       "value": 51,
+       "min": 31,
+       "max": 125
+      },
+      "R+82": {
+       "value": 50,
+       "min": 31,
+       "max": 125
+      },
+      "R+194": {
+       "value": 43,
+       "min": 31,
+       "max": 125
+      },
+      "R+1": {
+       "value": 41,
+       "min": 31,
+       "max": 125
+      }
+     }
+    },
+    "AST": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 15,
+       "min": 10,
+       "max": 40
+      },
+      "L-44": {
+       "value": 17,
+       "min": 10,
+       "max": 40
+      },
+      "L-3": {
+       "value": 13,
+       "min": 10,
+       "max": 40
+      },
+      "R+45": {
+       "value": 19,
+       "min": 10,
+       "max": 30
+      },
+      "R+82": {
+       "value": 15,
+       "min": 10,
+       "max": 30
+      },
+      "R+194": {
+       "value": 15,
+       "min": 10,
+       "max": 30
+      },
+      "R+1": {
+       "value": 18,
+       "min": 10,
+       "max": 30
+      }
+     }
+    },
+    "ALT": {
+     "unit": "U/L",
+     "test": "CMP",
+     "values": {
+      "L-92": {
+       "value": 12,
+       "min": 9,
+       "max": 46
+      },
+      "L-44": {
+       "value": 13,
+       "min": 9,
+       "max": 46
+      },
+      "L-3": {
+       "value": 13,
+       "min": 9,
+       "max": 46
+      },
+      "R+45": {
+       "value": 17,
+       "min": 6,
+       "max": 29
+      },
+      "R+82": {
+       "value": 12,
+       "min": 6,
+       "max": 29
+      },
+      "R+194": {
+       "value": 10,
+       "min": 6,
+       "max": 29
+      },
+      "R+1": {
+       "value": 19,
+       "min": 6,
+       "max": 29
+      }
+     }
+    }
+   }
+  }
+ }
+}

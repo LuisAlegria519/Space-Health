@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "data:osdr": "node scripts/build-osdr.mjs data-raw/osdr/OSD-569_LSDS-7_CBC.csv data-raw/osdr/OSD-575_LSDS-8_CMP.csv"
   },
   "dependencies": {
     "lucide-react": "^1.73.0",

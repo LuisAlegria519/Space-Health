@@ -13,19 +13,24 @@ export function evaluate(metric, env) {
   return 'green'
 }
 
-const worst = (statuses) =>
-  statuses.reduce((a, b) => (getStatus(b).rank > getStatus(a).rank ? b : a), 'green')
+/** Most severe status in the list; 'none' if every entry is 'none' or the list is empty. */
+export const worstStatus = (statuses) =>
+  statuses.reduce((a, b) => (getStatus(b).rank > getStatus(a).rank ? b : a), 'none')
 
 /** Returns vitals with each metric's `status`/`threshold` and each region's `overallStatus` derived for `env`. */
 export function applyThresholds(vitals, env) {
   return Object.fromEntries(
     Object.entries(vitals).map(([key, region]) => {
-      const metrics = region.metrics.map((m) => ({
-        ...m,
-        status: evaluate(m, env),
-        threshold: typeof m.value === 'number' ? env.thresholds[m.id] : undefined,
-      }))
-      return [key, { ...region, metrics, overallStatus: worst(metrics.map((m) => m.status)) }]
+      const metrics = region.metrics.map((m) => {
+        const t = typeof m.value === 'number' ? env.thresholds[m.id] : undefined
+        const op = t?.worse === 'higher' ? '≥' : '≤'
+        return {
+          ...m,
+          status: evaluate(m, env),
+          limitsText: t ? `${env.label} limits: caution ${op} ${t.yellow} · critical ${op} ${t.red}` : '',
+        }
+      })
+      return [key, { ...region, metrics, overallStatus: worstStatus(metrics.map((m) => m.status)) }]
     }),
   )
 }
